@@ -1,0 +1,2 @@
+# sentek
+custom wordpress theme
