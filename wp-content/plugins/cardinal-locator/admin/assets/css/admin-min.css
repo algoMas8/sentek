@@ -1,0 +1,16 @@
+#locations_meta_box .description{margin-bottom:10px}#locations_meta_box label.bh-sl-checkbox{display:block;padding:15px 0 25px 0;width:100%}
+#locations_meta_box input[type="text"],#locations_meta_box input[type="email"],#locations_meta_box input[type="tel"],#locations_meta_box input[type="url"]{background-color:#fff;border:1px solid #ddd;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.07) inset;box-shadow:0 1px 2px rgba(0,0,0,0.07) inset;color:#32373c;margin-top:10px;outline:0 none;-webkit-transition:border-color .05s ease-in-out 0s;transition:border-color .05s ease-in-out 0s;width:100%}
+#locations_meta_box input[type="text"]:focus,#locations_meta_box input[type="email"]:focus,#locations_meta_box input[type="tel"]:focus,#locations_meta_box input[type="url"]:focus{border-color:#5b9dd9;-webkit-box-shadow:0 0 2px rgba(30,140,190,0.8);box-shadow:0 0 2px rgba(30,140,190,0.8)}
+.settings_page_bh-storelocator .bh-sl-imgdimlabel{padding-right:5px}.settings_page_bh-storelocator .bh-sl-imgdiminput{margin-right:10px}
+.bh-sl-taxfilters-container{background-color:#fff;padding:15px 30px}.bh-sl-taxfilters-container [draggable]{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.bh-sl-taxfilters-container .bh-sl-tax-filters-row{cursor:move;display:block;float:left;width:100%;padding:15px 0}
+.bh-sl-taxfilters-container .bh-sl-tax-filters-row.over{border:2px dashed #000}.bh-sl-taxfilters-container .bh-sl-tax-filters-row.over *{pointer-events:none}
+.bh-sl-taxfilters-container .bh-sl-tax-filters-row.bh-sl-tax-filters-heading{padding-bottom:0;font-weight:bold}
+.bh-sl-taxfilters-container .bh-sl-tax-filter-left,.bh-sl-taxfilters-container .bh-sl-tax-filter-right{display:block;float:left;margin-left:5px;width:160px}
+.bh-sl-taxfilters-container .bh-sl-tax-filter-left{margin-right:15px}.bh-sl-taxfilters-container .bh-sl-remove-filter{float:right;width:18px;height:18px;margin-top:5px;cursor:pointer;background:#a1a1a1 url(../img/close-icon.png) 3px 3px no-repeat;border-radius:3px}
+.bh-sl-taxfilters-container .bh-sl-remove-filter:hover{background:#32373c url(../img/close-icon.png) 3px 3px no-repeat}
+.bh-sl-taxfilters-container #bh-sl-add-filter{margin-top:15px}.bh-storelocator-license_key #license_key{margin-right:15px}
+.bh-storelocator-license_key #license_key.bh-sl-active-license{background-color:#dff0d8}
+.bh-storelocator-license_key .bh-storelocator-license-load{margin-top:10px}.bh-storelocator-license_key #bh-sl-deactivate-license{margin-left:10px}
+.bh-sl-system-info-textarea{background:#fff;min-height:800px;width:100%}#bh-sl-location-preview{height:250px;margin-bottom:15px;width:100%}
+#bh-sl-location-preview-reset{margin:15px 0}
