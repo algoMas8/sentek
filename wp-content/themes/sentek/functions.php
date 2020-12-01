@@ -47,6 +47,8 @@ if ( ! function_exists( 'sentek_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		add_post_type_support( 'page', 'excerpt' );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
@@ -142,12 +144,12 @@ add_action( 'widgets_init', 'sentek_widgets_init' );
 function sentek_scripts() {
 
 	// use new version of jquery for front end
-	//wp_deregister_script( 'jquery' );
-	//wp_enqueue_script( 'jquery', get_template_directory_uri() . '/jquery/jquery-3.5.1.min.js', array(), '3.5.1' );
+	wp_deregister_script( 'jquery' );
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/jquery/jquery-3.5.1.min.js', array(), '3.5.1' );
 
-	// use new version of jquery migarte for front end
-	//wp_deregister_script( 'jquery-migrate' );
-	//wp_enqueue_script( 'jquery-migrate', get_template_directory_uri() . '/jquery/jquery-migrate-3.3.1.min.js', array(), '3.3.1' );
+	// use new version of jquery migrate for front end
+	wp_deregister_script( 'jquery-migrate' );
+	wp_enqueue_script( 'jquery-migrate', get_template_directory_uri() . '/jquery/jquery-migrate-3.3.1.min.js', array(), '3.3.1' );
 
 	wp_enqueue_style('sentek-bootstrap-min', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
 

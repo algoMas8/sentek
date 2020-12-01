@@ -12,29 +12,48 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<div class="container">
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			<h1>Case Studies</h1>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'sentek' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'sentek' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+<?php while ( have_posts() ) :
 
-		endwhile; // End of the loop.
-		?>
+					the_post();
+
+		 			the_title('<h2 class="case-study-title">', '</h2>'); ?>
+
+			<!-- top section displays slider or hero image based on user selection-->
+			<?php if(get_field('top_hero_area') == 'image slider') {
+
+				  		get_template_part('inc/image-slider');
+
+		  				}
+
+	  		 else if(get_field('top_hero_area') == 'single hero image') { ?>
+
+
+					 		<div class="hero-image" style="background-image: url(<?php the_field('hero_image'); ?>);"></div>
+
+
+				 <?php } ?>
+
+				 <div class="single-case-study-content">
+
+				 	<?php the_content(); ?>
+
+				 <div>
+
+		 		<?php endwhile; // End of the loop.
+		 		?>
+
+
+		</div>
+
+
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

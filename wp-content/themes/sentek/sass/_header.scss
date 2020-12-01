@@ -1,0 +1,54 @@
+header{
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .site-branding{
+
+    img{
+
+      width: 300px;
+      height: 104px;
+
+    }
+
+  }
+
+  .store-link{
+
+    background: $green;
+    color: white;
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+
+  }
+
+  #site-navigation{
+
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        float: left;
+
+        a {
+          display: block;
+          padding-left: 20px;
+          color: $light-blue;
+          font-size: 18px;
+
+        }
+      }
+    }
+
+  }
+
+}

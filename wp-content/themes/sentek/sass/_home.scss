@@ -1,0 +1,93 @@
+.home-right-img{
+
+  height: 300px;
+
+}
+
+.main-home-band{
+
+  @include paddingTopBot();
+
+}
+
+.second-home-band-wrapper{
+
+  background: $light-grey;
+  @include paddingTopBot();
+
+}
+
+.home-market-wrapper{
+
+  background: $light-blue;
+
+  h3{
+
+    padding: 8px;
+    font-size: 24px;
+
+    @media(max-width: $medium){
+
+      font-size: 20px;
+
+    }
+
+  }
+
+  a{
+
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+
+  .feat-img-wrapper{
+
+    @include centerBackgroundImage();
+    height: 225px;
+    transition: $transition;
+
+    &:hover{
+
+      opacity: 0.8;
+
+    }
+
+    @media(max-width: $medium){
+
+      height: 175px;
+
+    }
+
+  }
+
+}
+
+.strengths-wrapper{
+
+  @include paddingTopBot();
+
+  .third-home-band{
+
+    .icon-wrapper{
+
+      padding: 50px;
+
+    }
+
+  }
+
+}
+
+.fourth-home-band{
+
+  .feat-img-container{
+
+    @include centerBackgroundImage();
+    height: 225px;
+
+  }
+
+}
