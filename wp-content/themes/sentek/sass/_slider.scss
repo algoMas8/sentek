@@ -1,0 +1,50 @@
+.home-carousel-wrapper{
+
+  position: relative;
+
+  .carousel-control-next{
+
+    opacity: 1!important;
+
+  }
+
+
+  .carousel-control-prev{
+
+    opacity: 1!important;
+
+  }
+
+  .slider-arrow{
+
+
+
+  }
+
+  .carousel-item{
+
+    height: 625px;
+    @include centerBackgroundImage();
+
+    @media(max-width: 2000px){
+
+      height: 575px;
+
+    }
+
+    @media(max-width: 1600px){
+
+      height: 475px;
+
+    }
+
+    @media(max-width: $mobile){
+
+        height: 300px;
+
+    }
+
+
+  }
+
+}

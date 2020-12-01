@@ -1,0 +1,48 @@
+$green: #1abc9c;
+$light-green: #beeeec;
+$light-blue: #1faee4;
+$light-grey: #e9e9e9;
+
+$laptop: 1200px;
+$medium: 991px;
+$mobile: 767px;
+
+$rowPadding: 25px;
+
+/* Mixins */
+
+@mixin paddingTopBot{
+
+  padding-top: $rowPadding;
+  padding-bottom: $rowPadding;
+
+}
+
+@mixin flexboxCenter{
+
+ display:-webkit-box; // old
+ display:-moz-box; // old
+ display:-ms-flexbox; // ie
+ display:-webkit-flex; // new
+ display:flex; // new
+ align-items: center;
+ justify-content: center;
+
+}
+
+@mixin centerBackgroundImage{
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+/* transitions */
+$transition: all 0.2s ease-in;
+
+
+@import 'header';
+@import 'home';
+@import 'slider';
+@import 'case-studies';
