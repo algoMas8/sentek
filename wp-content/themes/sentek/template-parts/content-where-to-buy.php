@@ -12,19 +12,26 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-
-    <header class="entry-header">
-  		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-  	</header><!-- .entry-header -->
-
-    <div class="container">
+  <div class="container page-container">
 
 
       <div class="entry-content">
 
+        <h1><?php the_title();?></h1>
+
         <?php the_content(); ?>
 
         <?php echo do_shortcode('[cardinal-storelocator]'); ?>
+
+      </div>
+
+  </div>
+
+</div> <!-- close background image div created in header -->
+
+
+  <div class="container">
+
 
         <h2>All Dealers</h2>
 
@@ -130,7 +137,7 @@
 
 
 
-      </div><!-- .entry-content -->
+    
 
     </div>
 

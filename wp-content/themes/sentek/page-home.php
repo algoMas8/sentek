@@ -12,7 +12,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-    <div class="container">
+    <div class="container slider-container">
 
       <?php get_template_part('inc/image-slider');?>
 
@@ -22,7 +22,7 @@ get_header();
 
       <div class="row">
 
-        <div class="col-md-6">
+        <div class="col-md-6 home-left-col">
 
           <?php
 
@@ -33,6 +33,10 @@ get_header();
               		<h1><?php the_title();?></h1>
 
               		<?php the_content(); ?>
+
+							<a class="sentek-button" href="<?php echo get_home_url();?>/about">Find Out More</a>
+
+							<br />
 
         </div>
 
@@ -49,6 +53,75 @@ get_header();
     </div>
 
   <?php endwhile; // End of the loop. ?>
+
+</div> <!-- close background image div created in header -->
+
+
+<div class="products-home-band-wrapper">
+
+		<div class="container products-home-band">
+
+			<div class="row">
+
+				<div class="col-12">
+					<h2>Products</h2>
+					<?php the_field('products_description');?>
+
+				</div>
+
+			</div>
+
+			<br />
+
+			<div class="row">
+
+			<?php //spit out children of 'products' and display in grid
+
+					$args = array(
+							'post_type'      => 'page',
+							'posts_per_page' => 4,
+							'post_parent'    => '20175',
+							'order'          => 'ASC',
+							'orderby'        => 'menu_order'
+					 );
+
+
+					$childrens = new WP_Query( $args );
+
+					if ( $childrens->have_posts() ) : ?>
+
+							<?php while ( $childrens->have_posts() ) :
+
+									$childrens->the_post();
+
+									$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
+
+									<div class="col-md-3" id="child-<?php the_ID(); ?>">
+
+										<div class="home-product-wrapper">
+
+											<a href="<?php the_permalink(); ?>"><div class="feat-img-wrapper" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div></a>
+
+											<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+											<a class="sentek-button" href="<?php the_permalink();?>/">View Products</a>
+
+										</div>
+
+									</div>
+
+							<?php endwhile;
+
+					endif;
+
+					wp_reset_query(); ?>
+
+				</div>
+
+		</div>
+
+	</div>
+
 
 	<div class="second-home-band-wrapper">
 
@@ -121,6 +194,10 @@ get_header();
 
 					<div class="col-12">
 						<h2>Our Strengths</h2>
+					</div>
+
+					<div class="col-12">
+						<?php the_field('strengths_copy')?>
 					</div>
 
 				</div>

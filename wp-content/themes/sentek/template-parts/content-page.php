@@ -10,45 +10,22 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
-	<?php sentek_post_thumbnail(); ?>
+	<div class="container slider-container">
 
-	<div class="entry-content">
-		<?php
-		the_content();
+		<?php get_template_part('inc/image-slider');?>
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sentek' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+	</div>
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'sentek' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+	<div class="container page-container">
+
+		<div class="entry-content">
+			<h1><?php the_title();?></h1>
+			<?php the_content(); ?>
+		</div><!-- .entry-content -->
+
+	</div>
+
+</div> <!-- close background image div created in header -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

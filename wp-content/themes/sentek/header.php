@@ -24,11 +24,15 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
 <div id="page" class="site">
+
+	<div class="top-background-image"> <!-- close this div on page templates -->
 
 
 	<header id="masthead" class="site-header">
-		<div class="container">
+
+		<div class="container header-container">
 			<div class="row">
 				<div class="col-3">
 					<div class="site-branding">
