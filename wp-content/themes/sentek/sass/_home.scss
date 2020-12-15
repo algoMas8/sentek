@@ -1,21 +1,91 @@
 .home-right-img{
 
-  height: 300px;
+  height: 100%;
 
 }
 
 .main-home-band{
 
-  @include paddingTopBot();
+  background: white;
+
+  .home-left-col{
+
+    padding-bottom: 40px;
+
+    p{
+
+      margin-bottom: 125px;
+
+    }
+
+  }
 
 }
 
 .second-home-band-wrapper{
 
-  background: $light-grey;
   @include paddingTopBot();
 
 }
+
+.products-home-band-wrapper{
+
+  @include paddingTopBot();
+  background: $lightest-blue;
+
+}
+
+
+.home-product-wrapper{
+
+
+
+  h3{
+
+    padding: 8px;
+    font-size: 24px;
+
+
+    @media(max-width: $medium){
+
+      font-size: 20px;
+
+    }
+
+  }
+
+  a{
+
+    color: $green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+
+  }
+
+
+  .feat-img-wrapper{
+
+    @include centerBackgroundImage();
+    height: 225px;
+    transition: $transition;
+
+    &:hover{
+
+      opacity: 0.8;
+
+    }
+
+    @media(max-width: $medium){
+
+      height: 175px;
+
+    }
+
+  }
+
+}
+
 
 .home-market-wrapper{
 
