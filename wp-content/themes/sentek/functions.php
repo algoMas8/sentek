@@ -53,6 +53,8 @@ if ( ! function_exists( 'sentek_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'sentek' ),
+				'quick-links' => esc_html__( 'Footer', 'sentek' ),
+				'important-info' => esc_html__( 'Footer-Right', 'sentek' ),
 			)
 		);
 

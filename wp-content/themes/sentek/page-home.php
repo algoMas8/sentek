@@ -42,7 +42,7 @@ get_header();
 
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
 
-        <div class="col-md-6">
+        <div class="col-md-6 home-right-col">
 
           <div class="home-right-img" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div>
 
@@ -73,7 +73,7 @@ get_header();
 
 			<br />
 
-			<div class="row">
+			<div class="row home-products-row">
 
 			<?php //spit out children of 'products' and display in grid
 
@@ -104,7 +104,9 @@ get_header();
 
 											<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-											<a class="sentek-button" href="<?php the_permalink();?>/">View Products</a>
+											<div class="product-link-wrapper">
+												<a class="sentek-button" href="<?php the_permalink();?>/">View Products</a>
+											</div>
 
 										</div>
 
@@ -168,7 +170,11 @@ get_header();
 
 												<a href="<?php the_permalink(); ?>"><div class="feat-img-wrapper" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div></a>
 
-												<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+												<div class="markets-link-wrapper">
+
+													<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+												</div>
 
 											</div>
 
@@ -190,58 +196,78 @@ get_header();
 
 			<div class="container third-home-band">
 
-				<div class="row">
+					<div class="row">
 
-					<div class="col-12">
-						<h2>Our Strengths</h2>
-					</div>
+						<div class="col-12">
+							<h2>Our Strengths</h2>
+						</div>
 
-					<div class="col-12">
-						<?php the_field('strengths_copy')?>
+						<div class="col-12">
+							<?php the_field('strengths_copy')?>
+						</div>
+
 					</div>
 
 				</div>
 
-				<br />
+				<div class="icon-full-width-wrapper">
 
-				<div class="row">
+					<div class="container">
 
-					<?php if( have_rows('our_strengths') ):
+						<div class="row">
 
-    						while( have_rows('our_strengths') ) :
+							<?php if( have_rows('our_strengths') ):
 
-									the_row();
+									$i = 1;
 
-        					$icon = get_sub_field('icon');
-									$title = get_sub_field('title');
-									$description = get_sub_field('description'); ?>
+		    						while( have_rows('our_strengths') ) :
 
-									<div class="col-md-4">
+											the_row();
 
-										<div class="icon-wrapper">
+		        					$icon = get_sub_field('icon');
+											$title = get_sub_field('title');
+											$description = get_sub_field('description'); ?>
 
-											<img src="<?php echo $icon;?>" class="mx-auto d-block img-fluid" />
+											<div class="col-md-4 strength-col strength-col-<?php echo $i;?>">
 
-										</div>
+												<div class="icon-wrapper">
 
-										<div class="strengths-description-wrapper">
-											<h4><?php echo $title;?></h4>
-											<p><?php echo $description;?></p>
-										</div>
+													<img src="<?php echo $icon;?>" class="mx-auto d-block img-fluid" />
 
-									</div>
+												</div>
+
+												<div class="strengths-description-wrapper">
+													<h4><?php echo $title;?></h4>
+													<p><?php echo $description;?></p>
+												</div>
+
+											</div>
+
+											<?php if($i == 3){ ?> <!-- close first row so second can have a full width white background -->
+
+											</div></div></div>
+											<div class="icon-full-width-wrapper-second">
+												<div class="container">
+													<div class="row">
+
+
+											<?php } ?>
 
 
 
-								<?php
+										<?php
 
-								endwhile;
+										$i++;
 
-							endif; ?>
+										endwhile;
+
+									endif; ?>
+
+								</div>
+
+							</div>
 
 						</div>
-
-					</div>
 
 				</div>
 
@@ -254,9 +280,11 @@ get_header();
 							<div class="col-md-6">
 								<h4>Leaders in their Field</h4>
 								<p>We are proud to work with progressive organisations globally</p>
+
+								<?php echo do_shortcode('[slick-carousel-slider slidestoshow="2" dots="false" arrows="true" image_fit="true"]');?>
 							</div>
 
-							<div class="col-md-6">
+							<div class="col-md-6 home-news-col">
 								<h4>Latest News</h4>
 
 								<?php
@@ -273,8 +301,10 @@ get_header();
 									 			<a href="<?php echo the_permalink();?>"><h5><?php the_title();?></h5></a>
 												<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 												<a href="<?php echo the_permalink();?>"><div class="feat-img-container" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div></a>
-												<p><?php the_date();?></p>
+												<br />
 									 			<?php the_excerpt();?>
+
+												<a class="white-button" href="<?php echo the_permalink();?>">Read More</a>
 
 										<?php endwhile;
 

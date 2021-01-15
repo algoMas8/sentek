@@ -19,11 +19,20 @@
 
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
 
+	<link rel="stylesheet" href="https://use.typekit.net/exv4kto.css">
+
+	<script src="https://use.fontawesome.com/768edc4395.js"></script>
+
+
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<?php get_template_part('inc/mobile-overlay-menu');?>
+
+
 
 <div id="page" class="site">
 
@@ -40,7 +49,16 @@
 					</div><!-- .site-branding -->
 				</div>
 				<div class="col-9">
+
 					<a class="store-link" href="https://orders.sentek.com.au/" target="_blank">Dealer Webstore</a>
+
+					<div class="hamburger-container" onclick="openNav()">
+					  <div class="bar1"></div>
+					  <div class="bar2"></div>
+					  <div class="bar3"></div>
+					</div>
+
+
 					<nav id="site-navigation" class="main-navigation text-right">
 						<?php
 						wp_nav_menu(

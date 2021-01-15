@@ -16,6 +16,7 @@ msgid "Twenty Seventeen brings your site to life with header video and immersive
 msgstr "Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalise its asymmetrical grid with a custom colour scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device."
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:17
 msgid "Twenty Seventeen"
 msgstr "Twenty Seventeen"
 
@@ -23,11 +24,11 @@ msgstr "Twenty Seventeen"
 msgid "Footer"
 msgstr "Footer"
 
-#: functions.php:340
+#: functions.php:346
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr "Add widgets here to appear in your sidebar on blog posts and archive pages."
 
-#: functions.php:338 sidebar.php:18
+#: sidebar.php:18 functions.php:344
 msgid "Blog Sidebar"
 msgstr "Blog Sidebar"
 
@@ -36,17 +37,17 @@ msgstr "Blog Sidebar"
 msgid "Scroll down to content"
 msgstr "Scroll down to content"
 
-#: functions.php:181
+#: functions.php:187
 msgctxt "Theme starter content"
 msgid "Coffee"
 msgstr "Coffee"
 
-#: functions.php:177
+#: functions.php:183
 msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "Sandwich"
 
-#: functions.php:173
+#: functions.php:179
 msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "Espresso"
@@ -143,24 +144,24 @@ msgstr "Colour Scheme"
 msgid "Default Header Image"
 msgstr "Default Header Image"
 
-#: functions.php:362
+#: functions.php:368
 msgid "Footer 2"
 msgstr "Footer 2"
 
-#: functions.php:352 functions.php:364
+#: functions.php:358 functions.php:370
 msgid "Add widgets here to appear in your footer."
 msgstr "Add widgets here to appear in your footer."
 
-#: functions.php:350
+#: functions.php:356
 msgid "Footer 1"
 msgstr "Footer 1"
 
-#: functions.php:290
+#: functions.php:296
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:64 functions.php:205
+#: functions.php:69 functions.php:211
 #: template-parts/navigation/navigation-top.php:12
 msgid "Top Menu"
 msgstr "Top Menu"
@@ -177,7 +178,7 @@ msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps sear
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 
-#: template-parts/post/content-none.php:17 search.php:26
+#: search.php:26 template-parts/post/content-none.php:17
 msgid "Nothing Found"
 msgstr "Nothing Found"
 
@@ -185,11 +186,11 @@ msgstr "Nothing Found"
 msgid "Previous Post"
 msgstr "Previous Post"
 
-#: comments.php:71 single.php:33
+#: single.php:33 comments.php:71
 msgid "Previous"
 msgstr "Previous"
 
-#: comments.php:72 single.php:34
+#: single.php:34 comments.php:72
 msgid "Next"
 msgstr "Next"
 
@@ -214,12 +215,12 @@ msgid "Search Results for: %s"
 msgstr "Search Results for: %s"
 
 #. translators: %s: Post title.
-#: functions.php:392 template-parts/post/content-gallery.php:71
+#: functions.php:398 template-parts/post/content-gallery.php:71
+#: template-parts/post/content.php:57 template-parts/post/content-image.php:61
+#: template-parts/post/content-audio.php:84
 #: template-parts/post/content-video.php:83
-#: template-parts/post/content-image.php:61
-#: template-parts/post/content-audio.php:84 template-parts/post/content.php:57
-#: template-parts/page/content-front-page-panels.php:45
 #: template-parts/page/content-front-page.php:42
+#: template-parts/page/content-front-page-panels.php:45
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 
@@ -238,11 +239,11 @@ msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: template-parts/post/content-gallery.php:78
+#: template-parts/post/content.php:64 template-parts/post/content-image.php:68
+#: template-parts/post/content-audio.php:91
 #: template-parts/post/content-video.php:90
-#: template-parts/post/content-image.php:68
-#: template-parts/post/content-audio.php:91 template-parts/post/content.php:64
-#: template-parts/page/content-page.php:26
 #: template-parts/page/content-front-page.php:48
+#: template-parts/page/content-page.php:26
 msgid "Pages:"
 msgstr "Pages:"
 
@@ -254,15 +255,15 @@ msgstr "Menu"
 msgid "Skip to content"
 msgstr "Skip to content"
 
-#: functions.php:484
+#: functions.php:490
 msgid "Collapse child menu"
 msgstr "Collapse child menu"
 
-#: functions.php:483
+#: functions.php:489
 msgid "Expand child menu"
 msgstr "Expand child menu"
 
-#: functions.php:65 functions.php:216
+#: functions.php:70 functions.php:222
 msgid "Social Links Menu"
 msgstr "Social Links Menu"
 
@@ -293,15 +294,15 @@ msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr "One Reply to &ldquo;%s&rdquo;"
 
-#: archive.php:51 index.php:55 search.php:52
+#: index.php:55 archive.php:51 search.php:52
 msgid "Page"
 msgstr "Page"
 
-#: archive.php:50 index.php:54 search.php:51
+#: index.php:54 archive.php:50 search.php:51
 msgid "Next page"
 msgstr "Next page"
 
-#: archive.php:49 index.php:53 search.php:50
+#: index.php:53 archive.php:49 search.php:50
 msgid "Previous page"
 msgstr "Previous page"
 

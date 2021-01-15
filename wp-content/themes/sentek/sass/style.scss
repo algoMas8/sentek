@@ -1,7 +1,8 @@
 $green: #1abc9c;
 $light-green: #beeeec;
+$lightest-green: #e3f2f0;
 $light-blue: #1faee4;
-$lightest-blue: #edf6fc;
+$lightest-blue: #ebf4fb;
 $light-grey: #e9e9e9;
 
 $laptop: 1200px;
@@ -9,6 +10,7 @@ $medium: 991px;
 $mobile: 767px;
 
 $rowPadding: 25px;
+
 
 /* Mixins */
 
@@ -39,8 +41,29 @@ $rowPadding: 25px;
 
 }
 
+@mixin headerFont{
+
+  font-family: 'sofia-pro', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@mixin copyFont{
+
+  font-family: 'sofia-pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
 /* transitions */
 $transition: all 0.2s ease-in;
+
+body{
+  @include copyFont();
+  overflow-x: hidden;
+}
 
 h1{
 
@@ -49,6 +72,8 @@ h1{
   padding-top: 50px;
   padding-bottom: 15px;
   margin-bottom: 25px;
+  font-size: 36px;
+  @include headerFont();
 
 }
 
@@ -59,13 +84,32 @@ h2{
   padding-top: 50px;
   padding-bottom: 15px;
   margin-bottom: 25px;
+  font-size: 30px;
+  @include headerFont();
+
+}
+
+h3{
+  @include headerFont();
+}
+
+h4{
+  @include headerFont();
+}
+
+h5{
+
+  @include copyFont();
 
 }
 
 .sentek-button{
 
   color: $green;
-  padding: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 2px solid $green;
   transition: $transition;
 
@@ -80,9 +124,37 @@ h2{
 
 }
 
+.white-button{
+
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid white;
+  transition: $transition;
+
+  &:hover{
+
+    background: $green;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+
+  }
+
+}
+
+p, ul, li, a, span{
+    @include copyFont();
+}
+
 
 @import 'header';
+@import 'mobile-menu';
 @import 'home';
 @import 'slider';
 @import 'case-studies';
 @import 'page';
+@import 'footer';
+@import 'products-landing';

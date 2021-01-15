@@ -16,57 +16,53 @@ msgid "Twenty Sixteen is a modernized take on an ever-popular WordPress layout â
 msgstr "Twenty Sixteen is a modernised take on an ever-popular WordPress layout â€” the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom colour options with beautiful default colour schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere."
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:16 inc/block-patterns.php:56
 msgid "Twenty Sixteen"
 msgstr "Twenty Sixteen"
 
-#: functions.php:204
+#: functions.php:205
 msgid "Bright Red"
 msgstr "Bright Red"
 
-#: functions.php:199
+#: functions.php:200
 msgid "Dark Red"
 msgstr "Dark Red"
 
-#: functions.php:194
+#: functions.php:195
 msgid "Medium Brown"
 msgstr "Medium Brown"
 
-#: functions.php:189
+#: functions.php:190
 msgid "Dark Brown"
 msgstr "Dark Brown"
 
-#: functions.php:184
+#: functions.php:185
 msgid "Light Blue"
 msgstr "Light Blue"
 
-#: functions.php:179
+#: functions.php:180
 msgid "Bright Blue"
 msgstr "Bright Blue"
 
-#: functions.php:174
+#: functions.php:175
 msgid "Blue Gray"
 msgstr "Blue Grey"
 
-#: functions.php:169
+#: functions.php:170
 msgid "White"
 msgstr "White"
 
-#: functions.php:164
+#: functions.php:165
 msgid "Light Gray"
 msgstr "Light Grey"
 
-#: functions.php:159
+#: functions.php:160
 msgid "Medium Gray"
 msgstr "Medium Grey"
 
-#: functions.php:154
+#: functions.php:155
 msgid "Dark Gray"
 msgstr "Dark Grey"
-
-#. translators: %s: Post title.
-#: template-parts/content.php:29 inc/template-tags.php:195
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #. translators: %s: Post title.
 #: image.php:88 template-parts/content-page.php:39
@@ -74,6 +70,11 @@ msgstr "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 #: template-parts/content-search.php:43 template-parts/content-single.php:47
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. translators: %s: Post title.
+#: template-parts/content.php:29 inc/template-tags.php:195
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: inc/customizer.php:347
 msgid "Red"
@@ -100,15 +101,15 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Search for:"
 
-#: footer.php:30
-msgid "Footer Social Links Menu"
-msgstr "Footer Social Links Menu"
-
 #: footer.php:17
 msgid "Footer Primary Menu"
 msgstr "Footer Primary Menu"
 
-#: functions.php:269
+#: footer.php:30
+msgid "Footer Social Links Menu"
+msgstr "Footer Social Links Menu"
+
+#: functions.php:273
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Add widgets here to appear in your sidebar."
 
@@ -146,13 +147,13 @@ msgstr "Author:"
 msgid "Previous post:"
 msgstr "Previous post:"
 
-#: single.php:41
-msgid "Previous"
-msgstr "Previous"
-
 #: single.php:39
 msgid "Next post:"
 msgstr "Next post:"
+
+#: single.php:41
+msgid "Previous"
+msgstr "Previous"
 
 #: single.php:38
 msgid "Next"
@@ -183,22 +184,22 @@ msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Posted on"
 
-#. translators: %s: Post title.
-#: inc/template-tags.php:53
-msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
-
 #: inc/template-tags.php:40
 msgctxt "Used before post format."
 msgid "Format"
 msgstr "Format"
+
+#. translators: %s: Post title.
+#: inc/template-tags.php:53
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 
 #: inc/template-tags.php:26
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Author"
 
-#: functions.php:209 inc/customizer.php:357
+#: functions.php:210 inc/customizer.php:357
 msgid "Yellow"
 msgstr "Yellow"
 
@@ -230,6 +231,11 @@ msgstr "Link Colour"
 msgid "Page Background Color"
 msgstr "Page Background Colour"
 
+#: single.php:31 image.php:107
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+
 #: inc/customizer.php:153
 msgid "Base Color Scheme"
 msgstr "Base Color Scheme"
@@ -238,11 +244,6 @@ msgstr "Base Color Scheme"
 #: inc/back-compat.php:42 inc/back-compat.php:56 inc/back-compat.php:75
 msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
-
-#: single.php:31 image.php:107
-msgctxt "Parent post link"
-msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
-msgstr "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 
 #: image.php:77
 msgctxt "Used before full size attachment link."
@@ -270,42 +271,42 @@ msgstr "Menu"
 msgid "Skip to content"
 msgstr "Skip to content"
 
-#: functions.php:420
-msgid "collapse child menu"
-msgstr "collapse child menu"
-
-#: functions.php:419
+#: functions.php:423
 msgid "expand child menu"
 msgstr "expand child menu"
 
-#: functions.php:338
-msgctxt "Inconsolata font: on or off"
-msgid "on"
-msgstr "on"
+#: functions.php:424
+msgid "collapse child menu"
+msgstr "collapse child menu"
 
-#: functions.php:330
-msgctxt "Montserrat font: on or off"
-msgid "on"
-msgstr "on"
-
-#: functions.php:322
+#: functions.php:326
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:291
+#: functions.php:334
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:342
+msgctxt "Inconsolata font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:295
 msgid "Content Bottom 2"
 msgstr "Content Bottom 2"
 
-#: functions.php:281 functions.php:293
+#: functions.php:285 functions.php:297
 msgid "Appears at the bottom of the content on posts and pages."
 msgstr "Appears at the bottom of the content on posts and pages."
 
-#: functions.php:279
+#: functions.php:283
 msgid "Content Bottom 1"
 msgstr "Content Bottom 1"
 
-#: functions.php:267
+#: functions.php:271
 msgid "Sidebar"
 msgstr "Sidebar"
 
