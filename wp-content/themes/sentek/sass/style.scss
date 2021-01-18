@@ -14,138 +14,148 @@ $rowPadding: 25px;
 
 /* Mixins */
 
-@mixin paddingTopBot{
+@mixin paddingTopBot {
 
-  padding-top: $rowPadding;
-  padding-bottom: $rowPadding;
-
-}
-
-@mixin flexboxCenter{
-
- display:-webkit-box; // old
- display:-moz-box; // old
- display:-ms-flexbox; // ie
- display:-webkit-flex; // new
- display:flex; // new
- align-items: center;
- justify-content: center;
+    padding-top: $rowPadding;
+    padding-bottom: $rowPadding;
 
 }
 
-@mixin centerBackgroundImage{
+@mixin flexboxCenter {
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-
-@mixin headerFont{
-
-  font-family: 'sofia-pro', sans-serif;
-  font-weight: 600;
-  font-style: normal;
+    display: -webkit-box; // old
+    display: -moz-box; // old
+    display: -ms-flexbox; // ie
+    display: -webkit-flex; // new
+    display: flex; // new
+    align-items: center;
+    justify-content: center;
 
 }
 
-@mixin copyFont{
+@mixin centerBackgroundImage {
 
-  font-family: 'sofia-pro', sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+@mixin headerFont {
+
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@mixin copyFont {
+
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
 /* transitions */
 $transition: all 0.2s ease-in;
 
-body{
-  @include copyFont();
-  overflow-x: hidden;
+body {
+    @include copyFont();
+    overflow-x: hidden;
 }
 
-h1{
+h1 {
 
-  color: $light-blue;
-  border-bottom: 1px solid $light-blue;
-  padding-top: 50px;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
-  font-size: 36px;
-  @include headerFont();
-
-}
-
-h2{
-
-  color: $light-blue;
-  border-bottom: 1px solid $light-blue;
-  padding-top: 50px;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
-  font-size: 30px;
-  @include headerFont();
+    color: $light-blue;
+    border-bottom: 1px solid $light-blue;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    @include headerFont();
 
 }
 
-h3{
-  @include headerFont();
-}
+h2 {
 
-h4{
-  @include headerFont();
-}
-
-h5{
-
-  @include copyFont();
+    color: $light-blue;
+    border-bottom: 1px solid $light-blue;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    @include headerFont();
 
 }
 
-.sentek-button{
+h3 {
+    color: $light-blue;
+    border-bottom: 1px solid $light-blue;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    @include headerFont();
+}
 
-  color: $green;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 2px solid $green;
-  transition: $transition;
+h4 {
+    @include headerFont();
+}
 
-  &:hover{
+h5 {
 
-    background: $green;
+    @include copyFont();
+
+}
+
+.sentek-button {
+
+    color: $green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid $green;
+    transition: $transition;
+
+    &:hover {
+
+        background: $green;
+        color: white;
+        border: 2px solid white;
+        text-decoration: none;
+
+    }
+
+}
+
+.white-button {
+
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 2px solid white;
-    text-decoration: none;
+    transition: $transition;
 
-  }
+    &:hover {
+
+        background: $green;
+        color: white;
+        border: 2px solid white;
+        text-decoration: none;
+
+    }
 
 }
 
-.white-button{
-
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 2px solid white;
-  transition: $transition;
-
-  &:hover{
-
-    background: $green;
-    color: white;
-    border: 2px solid white;
-    text-decoration: none;
-
-  }
-
-}
-
-p, ul, li, a, span{
+p,
+ul,
+li,
+a,
+span {
     @include copyFont();
 }
 
@@ -158,3 +168,4 @@ p, ul, li, a, span{
 @import 'page';
 @import 'footer';
 @import 'products-landing';
+@import 'about';

@@ -1,0 +1,11 @@
+.half-image {
+    height: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.about-team-wrapper p {
+    column-count: 2;
+    column-gap: 30px;
+}
