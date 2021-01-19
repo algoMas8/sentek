@@ -17,9 +17,11 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<div class="container">
+		<div class="container slider-container">
 			<?php get_template_part('inc/image-slider-case-studies-archive');?>
     </div>
+
+	</div> <!-- close background image div created in header -->
 
 		<div class="news-band">
 
@@ -71,7 +73,8 @@ get_header();
 											<p class="post-date"><?php echo get_the_date();?></p>
 
 											<div class="intro"><?php the_excerpt();?></div>
-											<p class="link"><a href="<?php echo the_permalink();?>">Read More</a></p>
+											<br />
+											<a class="sentek-button" href="<?php echo the_permalink();?>">Read More</a>
 
 										</div>
 

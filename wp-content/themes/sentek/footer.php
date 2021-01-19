@@ -112,5 +112,19 @@ jQuery('.show-hide-product-details').each(function(){
 });
 </script>
 
+<script>
+jQuery('.menu-item-has-children').each(function(){
+
+	jQuery(this).hover(function() {
+
+		//jQuery(this).toggleClass('fa-chevron-down fa-chevron-up')
+		jQuery(this).find('.sub-menu').slideToggle('slow');
+
+	});
+
+});
+
+</script>
+
 </body>
 </html>

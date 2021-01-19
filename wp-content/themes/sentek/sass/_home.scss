@@ -344,7 +344,14 @@
 
 .leaders-wrapper {
 
-    background: $light-green;
+    background: url('http://localhost/sentek/wp-content/themes/sentek/images/leaders-news-background.jpg');
+    @include centerBackgroundImage();
+
+    @media(max-width: $mobile){
+
+      background: $light-blue;
+
+    }
 
     .fourth-home-band {
 
@@ -412,6 +419,14 @@
 .bottom-wrapper {
 
     padding-bottom: 25px;
+    background: url('http://localhost/sentek/wp-content/themes/sentek/images/home-bottom.jpg');
+    @include centerBackgroundImage();
+
+    @media(max-width: $mobile){
+
+      background: $light-green;
+
+    }
 
     .gform_description {
 

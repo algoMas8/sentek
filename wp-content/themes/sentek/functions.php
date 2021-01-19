@@ -168,6 +168,48 @@ function sentek_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'sentek_scripts' );
 
+//create a custom taxonomy for 'news' categories
+function tr_create_my_news_taxonomy() {
+
+	register_taxonomy(
+        'news-category',
+				'news',
+        array(
+            'label' => __( 'News Category' ),
+            'hierarchical' => true,
+						'show_in_rest' => true,
+						'query_var' => true,
+						'rest_base' => 'news-category',
+    				'rest_controller_class' => 'WP_REST_Terms_Controller',
+
+        )
+    );
+}
+add_action( 'init', 'tr_create_my_news_taxonomy' );
+
+//register news custom post type
+function register_cp_news() {
+
+     $args = array(
+	     'labels' => array (
+		         'name' => __( 'News', 'news' ),
+		         'singular_name' => __( 'News Item', 'news-item' ),
+		      ),
+	     'public' => true,
+			 'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields', 'revisions' ),
+			 'taxonomies'          => array('news-category' ),
+	     'menu_position' => 10,
+	     'menu_icon' => 'dashicons-clipboard',
+	     'has_archive' => true,
+	     'capability_type' => 'post',
+	     'rewrite' => array('slug' => 'news', ),
+    );
+
+    register_post_type( 'news', $args );
+ }
+
+add_action( 'init', 'register_cp_news' );
+
 /**
  * Implement the Custom Header feature.
  */

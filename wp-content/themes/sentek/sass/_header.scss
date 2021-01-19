@@ -51,9 +51,12 @@ header{
 
   #site-navigation{
 
-    position: absolute;
-    right: 40px;
-    bottom: 5px;
+    //position: absolute;
+    //right: 40px;
+    //bottom: 5px;
+    margin-top: 65px;
+    float: right;
+    padding-right: 25px;
 
     @media(max-width: $laptop){
 
@@ -163,6 +166,32 @@ header{
   }
 
 }
+
+.sub-menu{
+
+      display: none;
+      background: $light-blue;
+      padding-inline-start: 0px;
+      margin-top: 22px;
+      width: 100px;
+      color: white;
+
+      li{
+
+        float: none!important;
+        text-align: right;
+        padding: 5px;
+
+        a{
+
+          font-size: 18px;
+
+
+        }
+
+      }
+
+    }
 
 /*.left-top-background{
 

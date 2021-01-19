@@ -251,13 +251,9 @@ get_header();
 													<div class="row">
 
 
-											<?php } ?>
+											<?php }
 
-
-
-										<?php
-
-										$i++;
+												$i++;
 
 										endwhile;
 
