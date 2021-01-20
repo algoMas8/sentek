@@ -27,7 +27,7 @@ get_header();
 
         <div class="container">
 
-            <div class="row">
+            <div class="row" id="about-who-we-are">
 
                 <div class="col-md-6">
                     <h2><?php the_field('top_heading')?></h2>
@@ -42,7 +42,7 @@ get_header();
 
             </div>
 
-            <div class="row">
+            <div class="row" id="about-manufacturing-excellence">
 
                 <div class="col-md-6">
                     <?php $secondardImage = get_field('secondary_image'); ?>
@@ -74,7 +74,7 @@ get_header();
             </div>
         </div>
 
-        <div class="container staff-management-band">
+        <div class="staff-management-band">
 
             <?php //spit out children of 'staff' > 'management' and display in grid
 
@@ -93,6 +93,8 @@ get_header();
 
 
 					$childrens = new WP_Query( $args );
+                        
+                        $x = 0;
 
 					if ( $childrens->have_posts() ) : ?>
 
@@ -100,25 +102,53 @@ get_header();
 
 									$childrens->the_post();
 
-									$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
+									$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); 
+            $profileNumber++;
+            
+            ?>
 
-            <div class="col-md-3" id="child-<?php the_ID(); ?>">
+            <!-- add a new row around every 2 profiles by seeing if it's an even or odd number -->
+            <?php if ($profileNumber % 2 != 0) {
+    ?>
+            <div class="about-staff-profile-row">
+                <?php
+} ?>
 
-                <div class="home-product-wrapper">
+                <div class="about-staff-profile" id="child-<?php the_ID(); ?>">
+                    <div class="about-staff-profile-inner">
 
-                    <a href="<?php the_permalink(); ?>">
-                        <div class="feat-img-wrapper" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div>
-                    </a>
+                        <div class="about-staff-profile-top">
 
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                    <div class="product-link-wrapper">
-                        <a class="sentek-button" href="<?php the_permalink();?>/">View Products</a>
+
+                            <div class="col-5">
+                                <div class="about-staff-image" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "><br /></div>
+                            </div>
+
+                            <div class="col-7">
+                                <h3><?php the_title(); ?></h3>
+                                <div id="about-staff-job-title"><?php the_field('job_title'); ?></div>
+                                <a href="<?php the_field('linkedin_profile'); ?>" id="about-staff-linkedin">LinkedIn</a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="about-staff-profile-bio">
+                            <?php echo the_content(); ?>
+                        </div>
+
                     </div>
 
                 </div>
 
+                <!-- close row if required -->
+                <?php if ($profileNumber % 2 == 0) {
+    ?>
             </div>
+            <?php
+} ?>
 
             <?php endwhile;
 
@@ -140,7 +170,7 @@ get_header();
             </div>
         </div>
 
-        <div class="container staff-sales-band">
+        <div class="staff-sales-band">
 
             <?php //spit out children of 'staff' > 'management' and display in grid
 
@@ -159,6 +189,8 @@ get_header();
 
 
 					$childrens = new WP_Query( $args );
+                        
+                        $x = 0;
 
 					if ( $childrens->have_posts() ) : ?>
 
@@ -166,32 +198,59 @@ get_header();
 
 									$childrens->the_post();
 
-									$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
+									$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); 
+            $profileNumber++;
+            
+            ?>
 
-            <div class="col-md-3" id="child-<?php the_ID(); ?>">
+            <!-- add a new row around every 2 profiles by seeing if it's an even or odd number -->
+            <?php if ($profileNumber % 2 != 0) {
+    ?>
+            <div class="about-staff-profile-row">
+                <?php
+} ?>
 
-                <div class="home-product-wrapper">
+                <div class="about-staff-profile" id="child-<?php the_ID(); ?>">
+                    <div class="about-staff-profile-inner">
 
-                    <a href="<?php the_permalink(); ?>">
-                        <div class="feat-img-wrapper" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div>
-                    </a>
+                        <div class="about-staff-profile-top">
 
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                    <div class="product-link-wrapper">
-                        <a class="sentek-button" href="<?php the_permalink();?>/">View Products</a>
+
+                            <div class="col-5">
+                                <div class="about-staff-image" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "><br /></div>
+                            </div>
+
+                            <div class="col-7">
+                                <h3><?php the_title(); ?></h3>
+                                <div id="about-staff-job-title"><?php the_field('job_title'); ?></div>
+                                <a href="<?php the_field('linkedin_profile'); ?>" id="about-staff-linkedin">LinkedIn</a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="about-staff-profile-bio">
+                            <?php echo the_content(); ?>
+                        </div>
+
                     </div>
 
                 </div>
 
+                <!-- close row if required -->
+                <?php if ($profileNumber % 2 == 0) {
+    ?>
             </div>
+            <?php
+} ?>
 
             <?php endwhile;
 
 					endif;
 
 					wp_reset_query(); ?>
-
         </div>
 
     </div>
