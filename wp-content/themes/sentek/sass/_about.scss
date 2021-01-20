@@ -1,3 +1,15 @@
+#about-who-we-are .col-md-6:nth-child(2) {
+    padding: 0px;
+}
+
+#about-who-we-are .col-md-6:nth-child(2) {
+    padding-left: 0px;
+}
+
+#about-manufacturing-excellence .col-md-6:nth-child(1) {
+    padding-right: 0px;
+}
+
 .half-image {
     height: 100%;
     background-position: center !important;
@@ -5,7 +17,151 @@
     background-repeat: no-repeat !important;
 }
 
+/* STAFF */
 .about-team-wrapper p {
     column-count: 2;
     column-gap: 30px;
+}
+
+@media (max-width: 576px) {
+    .about-team-wrapper p {
+        column-count: 1;
+    }
+}
+
+.about-staff-profile-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-staff-profile {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .about-staff-profile {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .about-staff-profile-inner {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-staff-profile-inner {
+        max-width: 351px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-staff-profile-inner {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-staff-profile-inner {
+        max-width: 570px;
+    }
+}
+
+
+.about-staff-profile:nth-child(1) .about-staff-profile-inner {
+    float: right;
+    padding-left: 15px
+}
+
+@media (max-width: 768px) {
+    .about-staff-profile:nth-child(1) .about-staff-profile-inner {
+        float: none;
+    }
+
+    .about-staff-profile-inner {
+        margin: 0 auto;
+    }
+}
+
+/* MANAGEMENT STAFF COLOURING */
+.staff-management-band .about-staff-profile-row:nth-child(2n+2) .about-staff-profile:nth-child(2) {
+    background: #e6f2f2;
+}
+
+.staff-management-band .about-staff-profile-row:nth-child(2n+1) .about-staff-profile:nth-child(1) {
+    background: #e6f2f2;
+}
+
+@media (max-width: 768px) {
+    .staff-management-band .about-staff-profile-row .about-staff-profile {
+        background: white !important;
+    }
+
+    .staff-management-band .about-staff-profile-row .about-staff-profile:nth-child(2n+1) {
+        background: #e6f2f2 !important;
+    }
+}
+
+/* SALES STAFF COLOURING */
+.staff-sales-band .about-staff-profile-row:nth-child(2n+1) .about-staff-profile:nth-child(2) {
+    background: #ebf4fb;
+}
+
+.staff-sales-band .about-staff-profile-row:nth-child(2n+2) .about-staff-profile:nth-child(1) {
+    background: #ebf4fb;
+}
+
+@media (max-width: 768px) {
+    .staff-sales-band .about-staff-profile-row .about-staff-profile {
+        background: white !important;
+    }
+
+    .staff-sales-band .about-staff-profile-row .about-staff-profile:nth-child(2n+1) {
+        background: #ebf4fb !important;
+    }
+}
+
+.about-staff-profile-top {
+    display: flex;
+    height: 200px;
+}
+
+.about-staff-profile-top .col-5 {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.about-staff-profile-top .col-7 {
+    padding-left: 0px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-staff-profile-top h3 {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    color: #1abc9c;
+}
+
+#about-staff-job-title {
+    color: #1faee4;
+}
+
+#about-staff-linkedin {
+    color: #1faee4;
+    margin-top: auto;
+}
+
+.about-staff-profile-bio {
+    padding: 15px;
+}
+
+
+.about-staff-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover !important;
+    background-position: center top !important;
 }
