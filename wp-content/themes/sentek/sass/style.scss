@@ -111,20 +111,20 @@ h5 {
 
 .sentek-button {
 
-    color: $green;
+    color: $green!important;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 2px solid $green;
+    border: 2px solid $green!important;
     transition: $transition;
 
     &:hover {
 
-        background: $green;
-        color: white;
-        border: 2px solid white;
-        text-decoration: none;
+        background: $green!important;
+        color: white!important;
+        border: 2px solid $green!important;
+        text-decoration: none!important;
 
     }
 
@@ -165,10 +165,11 @@ span {
 @import 'home';
 @import 'slider';
 @import 'case-studies';
-@import 'page';
 @import 'footer';
 @import 'products-landing';
 @import 'about';
 @import 'news';
 @import 'contact';
 @import 'where-to-buy';
+@import 'page-default';
+@import 'maps';

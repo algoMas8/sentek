@@ -277,7 +277,7 @@ get_header();
 								<h4>Leaders in their Field</h4>
 								<p>We are proud to work with progressive organisations globally</p>
 
-								<?php echo do_shortcode('[slick-carousel-slider slidestoshow="2" dots="false" arrows="true" image_fit="true"]');?>
+								<?php echo do_shortcode('[slick-carousel-slider category="63" slidestoshow="2" dots="false" arrows="true" image_fit="true"]');?>
 							</div>
 
 							<div class="col-md-6 home-news-col">

@@ -14,3 +14,39 @@
 .main-contact-band h3 {
     padding-top: 0;
 }
+
+#gform_submit_button_3 {
+
+    //position: relative !important;
+    //margin-left: 32% !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase !important;
+    background: $light-blue !important;
+    color: white !important;
+    border: 1px $light-blue!important;
+    transition: $transition;
+
+    &:hover {
+
+        border: 1px solid $light-blue !important;
+        background-color: transparent!important;
+        color: $light-blue !important;
+
+    }
+
+    /*@media(max-width: $laptop) {
+
+        margin-left: 30% !important;
+
+    }
+
+    @media(max-width: $medium) {
+
+        margin-left: 0% !important;
+
+    }*/
+
+}

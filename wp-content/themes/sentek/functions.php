@@ -239,10 +239,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 // ACF Google maps
-//function my_acf_init() {
-//    acf_update_setting('google_api_key', 'AIzaSyDCoe4FzRCjhPRUv6g21upOhia149MOwms');
-//}
-//add_action('acf/init', 'my_acf_init');
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyDCoe4FzRCjhPRUv6g21upOhia149MOwms');
+}
+add_action('acf/init', 'my_acf_init');
 
 // Country code conversion
 

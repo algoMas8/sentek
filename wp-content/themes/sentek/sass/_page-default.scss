@@ -1,0 +1,81 @@
+/* below due to full with pattern background */
+.page-container{
+  background: white;
+}
+
+.wp-block-image{
+
+  a{
+
+    img{
+
+      &:hover{
+
+        opacity: 0.7;
+
+      }
+
+    }
+
+  }
+
+}
+
+.default-page-container{
+
+  img{
+
+      max-width: 100%;
+      height: auto;
+
+    }
+
+    h2{
+
+      padding-top: 0px;
+
+    }
+
+    h3{
+
+      padding-top: 0px;
+
+    }
+
+    a{
+
+      transition: $transition;
+      color: $light-blue;
+
+      &:hover{
+
+        color: $green;
+        text-decoration: none;
+
+      }
+
+    }
+
+  .wp-block-button__link{
+
+    color: $green!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white!important;
+    border: 2px solid $green!important;
+    transition: $transition;
+
+    &:hover {
+
+        background: $green!important;
+        color: white!important;
+        border: 2px solid $green!important;
+        text-decoration: none!important;
+
+    }
+
+  }
+
+}

@@ -104,7 +104,7 @@ jQuery('.show-hide-product-details').each(function(){
 
 	jQuery(this).click(function() {
 
-		jQuery(this).toggleClass('fa-chevron-down fa-chevron-up')
+		jQuery(this).toggleClass('fa-chevron-down fa-chevron-up');
 		jQuery(this).closest('.product-info').find('.product-excerpt').slideToggle('slow');
 
 	});
@@ -112,17 +112,37 @@ jQuery('.show-hide-product-details').each(function(){
 });
 </script>
 
+<!-- toggle class of icons on 'where to buy page' -->
 <script>
-jQuery('.menu-item-has-children').each(function(){
+jQuery('.region-icon').each(function(){
 
-	jQuery(this).hover(function() {
+	jQuery(this).click(function() {
 
-		//jQuery(this).toggleClass('fa-chevron-down fa-chevron-up')
-		jQuery(this).find('.sub-menu').slideToggle('slow');
+		jQuery(this).toggleClass('fa-chevron-down fa-chevron-up');
 
 	});
 
 });
+</script>
+
+<script>
+//jQuery(window).resize(function() {
+
+	//if (jQuery(window).width() > 1119) {
+
+		jQuery('.menu-item-has-children').each(function(){
+
+			jQuery(this).hover(function() {
+
+				jQuery(this).find('.sub-menu').slideToggle('slow');
+
+			});
+
+		});
+
+	//}
+
+//s});
 
 </script>
 

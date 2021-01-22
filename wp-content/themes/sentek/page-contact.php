@@ -27,7 +27,9 @@ get_header();
 
                 <h1><?php the_title();?></h1>
 
-                [ map to go here ] <br /><br />
+                <?php get_template_part('inc/contact-map');?>
+
+                <br /><br />
 
             </div>
         </div>

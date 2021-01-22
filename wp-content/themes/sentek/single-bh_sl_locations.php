@@ -4,13 +4,13 @@
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<div class="container">
+			<div class="container page-container">
 
 				<div class="row">
 
 					<div class="col-md-12">
 
-						<h2><?php the_title();?></h2>
+						<h1><?php the_title();?></h1>
 
 					</div>
 
@@ -18,9 +18,7 @@
 
 				<div class="row">
 
-					<div class="col-md-6">
-
-						<h3><?php the_title();?></h3>
+					<div class="col-md-6 single-location-wrapper">
 
 						<?php if(get_post_meta( get_the_id(), '_bh_sl_web', true )){?>
 						<a href="<?php echo get_post_meta( get_the_id(), '_bh_sl_web', true );?>">Website</a><br />
@@ -67,6 +65,8 @@
 
 
 			</div>
+
+		</div> <!-- close background image div created in header -->
 
 		<?php endwhile; ?>
 

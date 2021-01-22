@@ -17,7 +17,9 @@
 
 	</div>
 
-	<div class="container page-container">
+</div> <!-- close background image div created in header -->
+
+	<div class="container page-container default-page-container">
 
 		<div class="entry-content">
 			<h1><?php the_title();?></h1>
@@ -26,6 +28,6 @@
 
 	</div>
 
-</div> <!-- close background image div created in header -->
+
 
 </article><!-- #post-<?php the_ID(); ?> -->
