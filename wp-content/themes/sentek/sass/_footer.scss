@@ -1,75 +1,83 @@
-.footer-top{
+.footer-top {
 
-  background: $lightest-blue;
-  margin-top: -15px;
-  padding-bottom: 30px;
-  padding-top: 10px;
+    background: $lightest-blue;
+    margin-top: -15px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+    .container {
+        background: $lightest-blue;
+    }
 
 }
 
-footer{
+footer {
 
-  background: $light-blue;
-  padding-top: 50px;
-  padding-bottom: 50px;
+    background: $light-blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-  .footer-row{
-
-    border-top: 1px solid white;
-    padding-top: 25px;
-
-    h5{
-
-      color: white;
-      margin-bottom: 20px;
-
+    .container {
+        background: $light-blue;
     }
 
-    nav{
+    .footer-row {
 
-      ul{
+        border-top: 1px solid white;
+        padding-top: 25px;
 
-        list-style-type: none;
-        padding-left: 0px;
+        h5 {
 
-        li{
-
-          padding-bottom: 8px;
-
-          a{
-
-            color: black;
-
-
-          }
+            color: white;
+            margin-bottom: 20px;
 
         }
 
-      }
+        nav {
+
+            ul {
+
+                list-style-type: none;
+                padding-left: 0px;
+
+                li {
+
+                    padding-bottom: 8px;
+
+                    a {
+
+                        color: black;
+
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        img {
+
+            max-width: 90%;
+
+            @media(max-width: $mobile) {
+
+                max-width: 200px;
+                margin-bottom: 25px;
+
+            }
+
+        }
 
     }
 
-    img{
+    i {
 
-      max-width: 90%;
-
-      @media(max-width: $mobile){
-
-        max-width: 200px;
-        margin-bottom: 25px;
-
-      }
+        color: white;
+        padding-right: 15px;
+        font-size: 20px;
 
     }
-
-  }
-
-  i{
-
-    color: white;
-    padding-right: 15px;
-    font-size: 20px;
-
-  }
 
 }

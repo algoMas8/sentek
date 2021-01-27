@@ -11,14 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="container slider-container">
+    <div class="container slider-container">
 
-		<?php get_template_part('inc/image-slider');?>
+        <?php get_template_part('inc/image-slider');?>
 
-	</div>
+    </div>
 
 
-</div> <!-- close background image div created in header -->
+    </div> <!-- close background image div created in header -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
 
@@ -26,21 +26,21 @@
 
     <div class="container second-home-band">
 
-      <div class="row">
+        <div class="row">
 
-        <div class="col-12">
-          <h1><?php the_title();?></h1>
-          <?php the_content(); ?>
+            <div class="col-12">
+                <h1><?php the_title();?></h1>
+                <?php the_content(); ?>
+
+            </div>
 
         </div>
 
-      </div>
+        <br />
 
-      <br />
+        <div class="row">
 
-      <div class="row">
-
-      <?php //spit out children of 'markets' and display in grid
+            <?php //spit out children of 'markets' and display in grid
 
           $args = array(
               'post_type'      => 'page',
@@ -55,29 +55,33 @@
 
           if ( $childrens->have_posts() ) : ?>
 
-              <?php while ( $childrens->have_posts() ) :
+            <?php while ( $childrens->have_posts() ) :
 
                   $childrens->the_post();
 
                   $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
 
-                  <div class="col-md-3" id="child-<?php the_ID(); ?>">
+            <div class="col-md-3" id="child-<?php the_ID(); ?>">
 
-                    <div class="home-market-wrapper">
+                <div class="home-market-wrapper">
 
-                      <a href="<?php the_permalink(); ?>"><div class="feat-img-wrapper" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div></a>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="feat-img-wrapper" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; "></div>
+                    </a>
 
-                      <div class="markets-link-wrapper">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="markets-link-wrapper">
 
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <h3><?php the_title(); ?></h3>
 
-                      </div>
+                        </div>
+                    </a>
 
-                    </div>
+                </div>
 
-                  </div>
+            </div>
 
-              <?php endwhile;
+            <?php endwhile;
 
           endif;
 
@@ -87,4 +91,4 @@
 
     </div>
 
-  </div>
+</div>

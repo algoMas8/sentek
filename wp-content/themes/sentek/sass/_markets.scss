@@ -1,0 +1,12 @@
+.wp-block-kadence-advancedgallery a {
+    text-decoration: none;
+}
+
+.kb-gallery-image-contain img {
+    transition: $transition;
+
+    &:hover {
+        opacity: 0.8;
+        transition: $transition;
+    }
+}

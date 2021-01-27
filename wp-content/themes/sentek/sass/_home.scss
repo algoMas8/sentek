@@ -33,14 +33,20 @@
 
 .second-home-band-wrapper {
 
-    @include paddingTopBot();
+    .container {
+        @include paddingTopBot();
+    }
 
 }
 
 .products-home-band-wrapper {
 
-    @include paddingTopBot();
     background: $lightest-blue;
+
+    .container {
+        @include paddingTopBot();
+        background: none;
+    }
 
     h2 {
 
@@ -147,10 +153,21 @@
 .home-market-wrapper {
 
     background: $light-green;
+    transition: $transition;
 
     @media(max-width: $mobile) {
 
         margin-bottom: 25px;
+
+    }
+
+    a {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
 
     }
 
@@ -165,7 +182,8 @@
             padding-bottom: 15px;
             font-size: 24px;
             text-align: center;
-
+            color: white;
+            font-weight: 300;
 
             @media(max-width: $medium) {
 
@@ -175,21 +193,15 @@
 
         }
 
-        a {
-
-            color: white;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 300;
-
-        }
-
 
     }
 
+    &:hover {
 
+        opacity: 0.8;
+        transition: $transition;
+
+    }
 
 
     .feat-img-wrapper {
@@ -198,13 +210,7 @@
         background-size: cover !important;
         background-repeat: no-repeat !important;
         height: 225px;
-        transition: $transition;
 
-        &:hover {
-
-            opacity: 0.8;
-
-        }
 
         @media(max-width: $medium) {
 
@@ -224,6 +230,10 @@
 
         background: $lightest-green;
         margin-top: 50px;
+
+        .container {
+            background: none;
+        }
 
         @media(max-width: $mobile) {
 
@@ -347,10 +357,14 @@
     background: url('http://localhost/sentek/wp-content/themes/sentek/images/leaders-news-background.jpg');
     @include centerBackgroundImage();
 
-    @media(max-width: $mobile){
+    @media(max-width: $mobile) {
 
-      background: $light-blue;
+        background: $light-blue;
 
+    }
+
+    .container {
+        background: none;
     }
 
     .fourth-home-band {
@@ -422,9 +436,13 @@
     background: url('http://localhost/sentek/wp-content/themes/sentek/images/home-bottom.jpg');
     @include centerBackgroundImage();
 
-    @media(max-width: $mobile){
+    .container {
+        background: none;
+    }
 
-      background: $light-green;
+    @media(max-width: $mobile) {
+
+        background: $light-green;
 
     }
 

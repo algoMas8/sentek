@@ -86,11 +86,11 @@
 
 /* MANAGEMENT STAFF COLOURING */
 .staff-management-band .about-staff-profile-row:nth-child(2n+2) .about-staff-profile:nth-child(2) {
-    background: #e6f2f2;
+    background: $lightest-green;
 }
 
 .staff-management-band .about-staff-profile-row:nth-child(2n+1) .about-staff-profile:nth-child(1) {
-    background: #e6f2f2;
+    background: $lightest-green;
 }
 
 @media (max-width: 768px) {
@@ -99,17 +99,17 @@
     }
 
     .staff-management-band .about-staff-profile-row .about-staff-profile:nth-child(2n+1) {
-        background: #e6f2f2 !important;
+        background: $lightest-green !important;
     }
 }
 
 /* SALES STAFF COLOURING */
 .staff-sales-band .about-staff-profile-row:nth-child(2n+1) .about-staff-profile:nth-child(2) {
-    background: #ebf4fb;
+    background: $lightest-blue;
 }
 
 .staff-sales-band .about-staff-profile-row:nth-child(2n+2) .about-staff-profile:nth-child(1) {
-    background: #ebf4fb;
+    background: $lightest-blue;
 }
 
 @media (max-width: 768px) {
@@ -118,7 +118,7 @@
     }
 
     .staff-sales-band .about-staff-profile-row .about-staff-profile:nth-child(2n+1) {
-        background: #ebf4fb !important;
+        background: $lightest-blue !important;
     }
 }
 
@@ -142,15 +142,15 @@
 .about-staff-profile-top h3 {
     padding-top: 0px;
     margin-bottom: 0px;
-    color: #1abc9c;
+    color: $green;
 }
 
 #about-staff-job-title {
-    color: #1faee4;
+    color: $light-blue;
 }
 
 #about-staff-linkedin {
-    color: #1faee4;
+    color: $light-blue;
     margin-top: auto;
 }
 
