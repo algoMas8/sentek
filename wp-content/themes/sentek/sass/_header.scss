@@ -1,231 +1,249 @@
-.top-background-image{
+.top-background-image {
 
-  //background: $light-blue;
-  background: url('http://localhost/sentek/wp-content/themes/sentek/images/sentek-background.jpg');
-  //@include centerBackgroundImage();
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  
+    //background: $light-blue;
+    background: url('http://localhost/sentek/wp-content/themes/sentek/images/sentek-background.jpg');
+    //@include centerBackgroundImage();
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
 
 }
 
-header{
+header {
 
-  .site-branding{
+    .site-branding {
 
-    margin-left: 25px;
+        margin-left: 25px;
 
-    img{
+        img {
 
-      width: 300px;
-      height: 104px;
+            width: 300px;
+            height: 104px;
 
-      @media(max-width: 667px){
+            @media(max-width: 667px) {
 
-        width: 225px;
-        height: 78px;
+                width: 225px;
+                height: 78px;
 
-      }
+            }
 
-      @media(max-width: 400px){
+            @media(max-width: 400px) {
 
-        width: 200px;
-        height: 69px;
+                width: 200px;
+                height: 69px;
 
-      }
-
-    }
-
-  }
-
-  .store-link{
-
-    color: black;
-    position: absolute;
-    right: 40px;
-    padding: 10px;
-    border: 2px solid $light-green;
-
-    @media(max-width: 667px){
-
-      display: none;
-
-    }
-
-  }
-
-  #site-navigation{
-
-    margin-top: 73px;
-    float: right;
-    padding-right: 25px;
-    position: relative;
-    height: 100%;
-
-    @media(max-width: $laptop){
-
-      display: none;
-
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-
-      li {
-        float: left;
-        height: 50px;
-
-        a {
-          display: block;
-          padding-left: 20px;
-          color: black;
-          font-size: 16px;
-          text-transform: uppercase;
-
+            }
 
         }
-      }
+
     }
 
-  }
+    .store-link {
+
+        color: black;
+        position: absolute;
+        right: 40px;
+        padding: 10px;
+        border: 2px solid $light-green;
+        transition: $transition;
+
+        @media(max-width: 667px) {
+
+            display: none;
+
+        }
+
+        &:hover {
+            background: $light-green;
+            text-decoration: none;
+            transition: $transition;
+        }
+
+    }
+
+    #site-navigation {
+
+        margin-top: 73px;
+        float: right;
+        padding-right: 25px;
+        position: relative;
+        height: 100%;
+
+        @media(max-width: $laptop) {
+
+            display: none;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            li {
+                float: left;
+                height: 50px;
+
+                a {
+                    display: block;
+                    padding-left: 20px;
+                    color: black;
+                    font-size: 16px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $light-blue;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
 
 }
 
-.header-container{
+.header-container {
 
-  background: white;
-  padding-top: 20px!important;
-  padding-left: 0px!important;
-  padding-right: 0px!important;
+    background: white;
+    padding-top: 20px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 
-  @media(max-width: $laptop){
+    @media(max-width: $laptop) {
 
-    padding-bottom: 20px!important;
+        padding-bottom: 20px !important;
 
-  }
+    }
 
-  .col-3{
+    .col-3 {
 
-    z-index: 2;
+        z-index: 2;
 
-  }
+    }
 
 }
 
-.slider-container{
-  padding-left: 0px!important;
-  padding-right: 0px!important;
+.slider-container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 
 }
 
 .hamburger-container {
 
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  right: 41px;
-  top: 64px;
-  z-index: 100;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 41px;
+    top: 64px;
+    z-index: 100;
 
-  @media(max-width: 667px){
+    @media(max-width: 667px) {
 
-    top: 25px;
-
-  }
-
-  &:hover{
-
-    .bar1, .bar2, .bar3 {
-
-      background-color: $light-green;
+        top: 25px;
 
     }
 
-  }
+    &:hover {
 
-  @media(max-width: $laptop){
+        .bar1,
+        .bar2,
+        .bar3 {
 
-    display: inline-block;
+            background-color: $light-green;
 
-  }
+        }
 
-}
+    }
 
-.bar1, .bar2, .bar3 {
+    @media(max-width: $laptop) {
 
-  width: 35px;
-  height: 5px;
-  background-color: $light-blue;
-  margin: 6px 0;
-  transition: $transition;
+        display: inline-block;
 
-  @media(max-width: 400px){
-
-    width: 30px;
-    height: 4px;
-
-  }
-
-  &:hover{
-
-    background-color: $light-green;
-
-  }
+    }
 
 }
 
-.sub-menu{
+.bar1,
+.bar2,
+.bar3 {
 
-      display: none;
-      background: $light-blue;
-      padding-inline-start: 0px;
-      top: 50px!important;
-      width: 100px;
-      color: white;
-      position: absolute;
-      z-index: 999999;
+    width: 35px;
+    height: 5px;
+    background-color: $light-blue;
+    margin: 6px 0;
+    transition: $transition;
 
-      @media(max-width: $laptop){
+    @media(max-width: 400px) {
+
+        width: 30px;
+        height: 4px;
+
+    }
+
+    &:hover {
+
+        background-color: $light-green;
+
+    }
+
+}
+
+.sub-menu {
+
+    display: none;
+    background: $light-blue;
+    padding-inline-start: 0px;
+    top: 50px !important;
+    width: 100px;
+    color: white;
+    position: absolute;
+    z-index: 999999;
+
+    @media(max-width: $laptop) {
 
         position: relative;
         width: 100%;
-        top: 0px!important;
-
-      }
-
-      li{
-
-        float: none!important;
-        text-align: right;
-        padding: 5px;
-        height: auto!important;
-
-        @media(max-width: $laptop){
-
-          text-align: center;
-
-        }
-
-        a{
-
-          font-size: 10px!important;
-          color: white!important;
-          text-transform: capitalize;
-          padding: 0px!important;
-          padding-left: 5px!important;
-          padding-right: 5px!important;
-          padding-bottom: 5px!important
-
-
-        }
-
-      }
+        top: 0px !important;
 
     }
+
+    li {
+
+        float: none !important;
+        text-align: right;
+        padding: 0px;
+        height: auto !important;
+
+        @media(max-width: $laptop) {
+
+            text-align: center;
+
+        }
+
+        a {
+
+            font-size: 10px !important;
+            color: white !important;
+            text-transform: capitalize;
+            padding: 5px !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+            padding-bottom: 5px !important;
+
+            &:hover {
+                background: $light-green;
+                color: black !important;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+}
 
 /*.left-top-background{
 

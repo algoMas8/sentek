@@ -1,14 +1,12 @@
 /* Mixins */
 /* transitions */
-/* line 63, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 body {
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
 }
 
-/* line 68, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 h1 {
   color: #1faee4;
   border-bottom: 1px solid #1faee4;
@@ -16,12 +14,11 @@ h1 {
   padding-bottom: 15px;
   margin-bottom: 25px;
   font-size: 36px;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-/* line 80, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 h2 {
   color: #1faee4;
   border-bottom: 1px solid #1faee4;
@@ -29,12 +26,11 @@ h2 {
   padding-bottom: 15px;
   margin-bottom: 25px;
   font-size: 30px;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-/* line 92, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 h3 {
   color: #1faee4;
   border-bottom: 1px solid #1faee4;
@@ -42,26 +38,23 @@ h3 {
   padding-bottom: 15px;
   margin-bottom: 25px;
   font-size: 20px;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-/* line 102, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 h4 {
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-/* line 106, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 h5 {
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* line 112, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 .sentek-button {
   color: #1abc9c !important;
   padding-top: 10px;
@@ -71,8 +64,6 @@ h5 {
   border: 2px solid #1abc9c !important;
   transition: all 0.2s ease-in;
 }
-
-/* line 122, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 .sentek-button:hover {
   background: #1abc9c !important;
   color: white !important;
@@ -80,7 +71,6 @@ h5 {
   text-decoration: none !important;
 }
 
-/* line 133, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 .white-button {
   color: white;
   padding-top: 10px;
@@ -90,8 +80,6 @@ h5 {
   border: 2px solid white;
   transition: all 0.2s ease-in;
 }
-
-/* line 143, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 .white-button:hover {
   background: #1abc9c;
   color: white;
@@ -99,18 +87,24 @@ h5 {
   text-decoration: none;
 }
 
-/* line 154, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/style.scss */
 p,
 ul,
 li,
 a,
 span {
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
+a {
+  color: #1faee4;
+}
+
+a:hover {
+  color: #1faee4;
+}
+
 .top-background-image {
   background: url("http://localhost/sentek/wp-content/themes/sentek/images/sentek-background.jpg");
   background-repeat: no-repeat;
@@ -118,50 +112,43 @@ span {
   background-size: cover;
 }
 
-/* line 15, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 header .site-branding {
   margin-left: 25px;
 }
-
-/* line 19, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 header .site-branding img {
   width: 300px;
   height: 104px;
 }
-
 @media (max-width: 667px) {
-  /* line 19, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   header .site-branding img {
     width: 225px;
     height: 78px;
   }
 }
-
 @media (max-width: 400px) {
-  /* line 19, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   header .site-branding img {
     width: 200px;
     height: 69px;
   }
 }
-
-/* line 42, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 header .store-link {
   color: black;
   position: absolute;
   right: 40px;
   padding: 10px;
   border: 2px solid #beeeec;
+  transition: all 0.2s ease-in;
 }
-
 @media (max-width: 667px) {
-  /* line 42, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   header .store-link {
     display: none;
   }
 }
-
-/* line 58, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
+header .store-link:hover {
+  background: #beeeec;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
 header #site-navigation {
   margin-top: 73px;
   float: right;
@@ -169,29 +156,21 @@ header #site-navigation {
   position: relative;
   height: 100%;
 }
-
 @media (max-width: 1200px) {
-  /* line 58, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   header #site-navigation {
     display: none;
   }
 }
-
-/* line 72, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 header #site-navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
-/* line 78, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 header #site-navigation ul li {
   float: left;
   height: 50px;
 }
-
-/* line 82, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 header #site-navigation ul li a {
   display: block;
   padding-left: 20px;
@@ -199,34 +178,31 @@ header #site-navigation ul li a {
   font-size: 16px;
   text-transform: uppercase;
 }
+header #site-navigation ul li a:hover {
+  color: #1faee4;
+  text-decoration: none;
+}
 
-/* line 98, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 .header-container {
   background: white;
   padding-top: 20px !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-
 @media (max-width: 1200px) {
-  /* line 98, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   .header-container {
     padding-bottom: 20px !important;
   }
 }
-
-/* line 111, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 .header-container .col-3 {
   z-index: 2;
 }
 
-/* line 119, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 .slider-container {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
 
-/* line 125, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 .hamburger-container {
   display: none;
   cursor: pointer;
@@ -235,49 +211,45 @@ header #site-navigation ul li a {
   top: 64px;
   z-index: 100;
 }
-
 @media (max-width: 667px) {
-  /* line 125, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   .hamburger-container {
     top: 25px;
   }
 }
-
-/* line 142, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
-.hamburger-container:hover .bar1, .hamburger-container:hover .bar2, .hamburger-container:hover .bar3 {
+.hamburger-container:hover .bar1,
+.hamburger-container:hover .bar2,
+.hamburger-container:hover .bar3 {
   background-color: #beeeec;
 }
-
 @media (max-width: 1200px) {
-  /* line 125, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   .hamburger-container {
     display: inline-block;
   }
 }
 
-/* line 158, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #1faee4;
   margin: 6px 0;
   transition: all 0.2s ease-in;
 }
-
 @media (max-width: 400px) {
-  /* line 158, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
-  .bar1, .bar2, .bar3 {
+  .bar1,
+.bar2,
+.bar3 {
     width: 30px;
     height: 4px;
   }
 }
-
-/* line 173, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
-.bar1:hover, .bar2:hover, .bar3:hover {
+.bar1:hover,
+.bar2:hover,
+.bar3:hover {
   background-color: #beeeec;
 }
 
-/* line 181, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 .sub-menu {
   display: none;
   background: #1faee4;
@@ -288,40 +260,37 @@ header #site-navigation ul li a {
   position: absolute;
   z-index: 999999;
 }
-
 @media (max-width: 1200px) {
-  /* line 181, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   .sub-menu {
     position: relative;
     width: 100%;
     top: 0px !important;
   }
 }
-
-/* line 200, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 .sub-menu li {
   float: none !important;
   text-align: right;
-  padding: 5px;
+  padding: 0px;
   height: auto !important;
 }
-
 @media (max-width: 1200px) {
-  /* line 200, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
   .sub-menu li {
     text-align: center;
   }
 }
-
-/* line 213, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_header.scss */
 .sub-menu li a {
   font-size: 10px !important;
   color: white !important;
   text-transform: capitalize;
-  padding: 0px !important;
+  padding: 5px !important;
   padding-left: 5px !important;
   padding-right: 5px !important;
   padding-bottom: 5px !important;
+}
+.sub-menu li a:hover {
+  background: #beeeec;
+  color: black !important;
+  text-decoration: none;
 }
 
 /*.left-top-background{
@@ -330,7 +299,6 @@ header #site-navigation ul li a {
   background-image: url('http://localhost/sentek/wp-content/themes/sentek/images/left-top-background.png');
 
 }*/
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay {
   height: 100%;
   width: 0;
@@ -342,13 +310,9 @@ header #site-navigation ul li a {
   overflow-x: hidden;
   transition: all 0.2s ease-in;
 }
-
-/* line 13, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay img {
   max-width: 75px;
 }
-
-/* line 19, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .closebtn {
   position: absolute;
   top: 75px;
@@ -357,84 +321,60 @@ header #site-navigation ul li a {
   color: white;
   font-weight: lighter;
 }
-
-/* line 28, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .closebtn:hover {
   color: #beeeec;
   text-decoration: none;
 }
-
 @media (max-width: 767px) {
-  /* line 19, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .closebtn {
     right: 50px;
     top: 50px;
   }
 }
-
-/* line 44, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content {
   position: relative;
   top: 15%;
   width: 100%;
   text-align: center;
 }
-
 @media (max-width: 767px) {
-  /* line 44, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content {
     top: 25%;
   }
 }
-
 @media (max-width: 600px) {
-  /* line 44, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content {
     top: 15%;
   }
 }
-
-/* line 65, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content img {
   max-width: 200px;
   margin-top: 25px;
 }
-
-/* line 72, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content #primary-menu {
   padding-left: 350px;
   padding-right: 350px;
   font-weight: 300;
   list-style-type: none;
 }
-
 @media (max-width: 991px) {
-  /* line 72, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content #primary-menu {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
-
 @media (max-width: 767px) {
-  /* line 72, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content #primary-menu {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-
-/* line 95, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content #primary-menu #menu-item-38 a {
   border-bottom: 1px solid black;
 }
-
-/* line 104, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content #primary-menu li {
   list-style-type: none;
 }
-
-/* line 108, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content #primary-menu li a {
   padding: 15px;
   text-decoration: none;
@@ -445,55 +385,40 @@ header #site-navigation ul li a {
   width: calc(100vw - 700px);
   cursor: pointer;
 }
-
 @media (max-width: 991px) {
-  /* line 108, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content #primary-menu li a {
     width: calc(100vw - 300px);
     padding: 15px;
   }
 }
-
 @media (max-width: 767px) {
-  /* line 108, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content #primary-menu li a {
     width: calc(100vw - 90px);
     padding: 0px;
   }
 }
-
 @media screen and (max-height: 650px) {
-  /* line 108, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content #primary-menu li a {
     font-size: 18px;
     padding: 15px;
   }
 }
-
 @media screen and (max-width: 425px) {
-  /* line 108, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
   .mobile-overlay .overlay-content #primary-menu li a {
     font-size: 18px;
     padding: 12px;
   }
 }
-
-/* line 147, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content #primary-menu li a:hover {
   color: white;
 }
-
-/* line 152, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_mobile-menu.scss */
 .mobile-overlay .overlay-content #primary-menu li a:focus {
   color: white;
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-right-col {
   padding-right: 0px !important;
 }
-
-/* line 5, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-right-col .home-right-img {
   height: 100%;
   background-position: center !important;
@@ -501,67 +426,52 @@ header #site-navigation ul li a {
   background-repeat: no-repeat !important;
 }
 
-/* line 16, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .main-home-band {
   background: white;
 }
-
-/* line 20, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .main-home-band .home-left-col {
   padding-bottom: 40px;
 }
-
-/* line 24, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .main-home-band .home-left-col p {
   margin-bottom: 125px;
 }
 
-/* line 34, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
-.second-home-band-wrapper {
+.second-home-band-wrapper .container {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 40, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .products-home-band-wrapper {
-  padding-top: 25px;
-  padding-bottom: 25px;
   background: #ebf4fb;
 }
-
-/* line 45, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
+.products-home-band-wrapper .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: none;
+}
 .products-home-band-wrapper h2 {
   padding-top: 10px;
 }
 
-/* line 53, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-products-row {
   position: relative;
   height: 375px;
 }
-
 @media (max-width: 991px) {
-  /* line 53, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-products-row {
     height: 325px;
   }
 }
-
 @media (max-width: 767px) {
-  /* line 53, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-products-row {
     height: auto;
   }
 }
-
-/* line 70, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-products-row .product-link-wrapper {
   position: absolute;
   bottom: 20px;
 }
-
 @media (max-width: 767px) {
-  /* line 70, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-products-row .product-link-wrapper {
     position: relative;
     margin-top: 40px;
@@ -569,29 +479,22 @@ header #site-navigation ul li a {
   }
 }
 
-/* line 91, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-product-wrapper h3 {
   padding-top: 15px;
   padding-bottom: 8px;
   font-size: 25px;
 }
-
 @media (max-width: 991px) {
-  /* line 91, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-product-wrapper h3 {
     font-size: 20px;
   }
 }
-
-/* line 106, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-product-wrapper a {
   color: #1abc9c;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
 }
-
-/* line 116, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-product-wrapper .feat-img-wrapper {
   background-position: center !important;
   background-size: cover !important;
@@ -599,191 +502,138 @@ header #site-navigation ul li a {
   height: 200px;
   transition: all 0.2s ease-in;
 }
-
-/* line 124, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-product-wrapper .feat-img-wrapper:hover {
   opacity: 0.8;
 }
-
 @media (max-width: 991px) {
-  /* line 116, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-product-wrapper .feat-img-wrapper {
     height: 175px;
   }
 }
-
 @media (max-width: 767px) {
-  /* line 116, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-product-wrapper .feat-img-wrapper {
     height: 350px;
   }
 }
 
-/* line 147, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-market-wrapper {
   background: #beeeec;
+  transition: all 0.2s ease-in;
 }
-
 @media (max-width: 767px) {
-  /* line 147, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-market-wrapper {
     margin-bottom: 25px;
   }
 }
-
-/* line 157, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
+.home-market-wrapper a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .home-market-wrapper .markets-link-wrapper {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("http://localhost/sentek/wp-content/themes/sentek/images/markets-home-background.jpg");
 }
-
-/* line 162, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-market-wrapper .markets-link-wrapper h3 {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 24px;
   text-align: center;
+  color: white;
+  font-weight: 300;
 }
-
 @media (max-width: 991px) {
-  /* line 162, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-market-wrapper .markets-link-wrapper h3 {
     font-size: 20px;
   }
 }
-
-/* line 178, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
-.home-market-wrapper .markets-link-wrapper a {
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 300;
+.home-market-wrapper:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
 }
-
-/* line 195, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .home-market-wrapper .feat-img-wrapper {
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   height: 225px;
-  transition: all 0.2s ease-in;
 }
-
-/* line 203, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
-.home-market-wrapper .feat-img-wrapper:hover {
-  opacity: 0.8;
-}
-
 @media (max-width: 991px) {
-  /* line 195, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .home-market-wrapper .feat-img-wrapper {
     height: 175px;
   }
 }
 
-/* line 219, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper {
   padding-top: 25px;
 }
-
-/* line 223, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .icon-full-width-wrapper {
   background: #e3f2f0;
   margin-top: 50px;
 }
-
+.strengths-wrapper .icon-full-width-wrapper .container {
+  background: none;
+}
 @media (max-width: 767px) {
-  /* line 223, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .strengths-wrapper .icon-full-width-wrapper {
     background: white;
   }
 }
-
-/* line 236, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .icon-wrapper {
   padding: 40px;
 }
-
-/* line 242, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col {
   padding-bottom: 25px;
 }
-
-/* line 250, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col-1 h4 {
   margin-top: -62px;
 }
-
 @media (max-width: 767px) {
-  /* line 250, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .strengths-wrapper .strength-col-1 h4 {
     margin-top: auto;
   }
 }
-
-/* line 264, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col-2 {
   background: white;
 }
-
-/* line 272, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col-3 h4 {
   margin-top: -46px;
 }
-
 @media (max-width: 767px) {
-  /* line 272, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .strengths-wrapper .strength-col-3 h4 {
     margin-top: auto;
   }
 }
-
-/* line 286, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col-4 {
   background: white;
 }
-
-/* line 292, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col-5 {
   background: #e3f2f0;
 }
-
 @media (max-width: 767px) {
-  /* line 292, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .strengths-wrapper .strength-col-5 {
     background: white;
   }
 }
-
-/* line 302, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col-5 h4 {
   margin-top: -65px;
 }
-
 @media (max-width: 767px) {
-  /* line 302, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .strengths-wrapper .strength-col-5 h4 {
     margin-top: auto;
   }
 }
-
-/* line 318, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper .strength-col-6 h4 {
   margin-top: -31px;
 }
-
 @media (max-width: 767px) {
-  /* line 318, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .strengths-wrapper .strength-col-6 h4 {
     margin-top: auto;
   }
 }
-
-/* line 332, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .strengths-wrapper h4 {
   color: #1abc9c;
   border-bottom: 1px solid #1faee4;
@@ -793,72 +643,57 @@ header #site-navigation ul li a {
   font-size: 19px;
 }
 
-/* line 345, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .leaders-wrapper {
   background: url("http://localhost/sentek/wp-content/themes/sentek/images/leaders-news-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 767px) {
-  /* line 345, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .leaders-wrapper {
     background: #1faee4;
   }
 }
-
-/* line 356, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
+.leaders-wrapper .container {
+  background: none;
+}
 .leaders-wrapper .fourth-home-band {
   padding-top: 25px;
   padding-bottom: 25px;
   color: white;
 }
-
-/* line 362, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .leaders-wrapper .fourth-home-band h4 {
   font-size: 36px;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
   margin-bottom: 20px;
 }
-
-/* line 371, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .leaders-wrapper .fourth-home-band p {
   padding-bottom: 20px;
   font-size: 18px;
 }
-
-/* line 379, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .leaders-wrapper .fourth-home-band .simplecarousal {
   padding-left: 30px;
   padding-right: 30px;
   /*button.slick-next.slick-arrow{
 
-        background: rgba(255,255,255,0.0)!important;
+    background: rgba(255,255,255,0.0)!important;
 
-      }*/
+  }*/
 }
-
-/* line 392, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .leaders-wrapper .fourth-home-band .feat-img-container {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 225px;
 }
-
-/* line 401, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .leaders-wrapper .fourth-home-band .home-news-col h5 {
   padding-bottom: 30px;
 }
-
-/* line 407, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .leaders-wrapper .fourth-home-band .home-news-col a {
   color: white;
 }
 
-/* line 419, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .bottom-wrapper {
   padding-bottom: 25px;
   background: url("http://localhost/sentek/wp-content/themes/sentek/images/home-bottom.jpg");
@@ -866,36 +701,28 @@ header #site-navigation ul li a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.bottom-wrapper .container {
+  background: none;
+}
 @media (max-width: 767px) {
-  /* line 419, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   .bottom-wrapper {
     background: #beeeec;
   }
 }
-
-/* line 431, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 .bottom-wrapper .gform_description {
   font-size: 18px !important;
 }
 
-/* line 441, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_1 input {
   height: 55px !important;
   color: #1faee4 !important;
 }
-
-/* line 446, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_1 input::placeholder {
   color: #1faee4 !important;
 }
-
-/* line 455, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_1 .gform_heading {
   text-align: center;
 }
-
-/* line 459, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_1 .gform_heading h3 {
   font-size: 30px !important;
   padding-bottom: 25px;
@@ -904,8 +731,6 @@ header #site-navigation ul li a {
   color: #1faee4 !important;
   border-bottom: 2px solid #1faee4;
 }
-
-/* line 472, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_1 .gform_button {
   position: relative !important;
   margin-left: 32% !important;
@@ -917,45 +742,32 @@ header #site-navigation ul li a {
   border: 1px white !important;
   transition: all 0.2s ease-in;
 }
-
-/* line 484, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_1 .gform_button:hover {
   border: 1px solid #1faee4 !important;
   background: white !important;
   color: #1faee4 !important;
 }
-
 @media (max-width: 1200px) {
-  /* line 472, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   #gform_1 .gform_button {
     margin-left: 30% !important;
   }
 }
-
 @media (max-width: 991px) {
-  /* line 472, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   #gform_1 .gform_button {
     margin-left: 0% !important;
   }
 }
 
-/* line 510, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_2 input {
   height: 55px !important;
   color: #1abc9c !important;
 }
-
-/* line 515, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_2 input::placeholder {
   color: #1abc9c !important;
 }
-
-/* line 523, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_2 .gform_heading {
   text-align: center;
 }
-
-/* line 527, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_2 .gform_heading h3 {
   font-size: 30px !important;
   padding-bottom: 25px;
@@ -964,8 +776,6 @@ header #site-navigation ul li a {
   color: #1abc9c !important;
   border-bottom: 2px solid #1abc9c;
 }
-
-/* line 540, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_2 .gform_button {
   position: relative !important;
   margin-left: 32% !important;
@@ -977,74 +787,54 @@ header #site-navigation ul li a {
   border: 1px white !important;
   transition: all 0.2s ease-in;
 }
-
-/* line 552, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
 #gform_2 .gform_button:hover {
   border: 1px solid #1abc9c !important;
   background: white !important;
   color: #1abc9c !important;
 }
-
 @media (max-width: 1200px) {
-  /* line 540, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   #gform_2 .gform_button {
     margin-left: 30% !important;
   }
 }
-
 @media (max-width: 991px) {
-  /* line 540, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_home.scss */
   #gform_2 .gform_button {
     margin-left: 0% !important;
   }
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_slider.scss */
 .home-carousel-wrapper {
   position: relative;
 }
-
-/* line 5, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_slider.scss */
 .home-carousel-wrapper .carousel-control-next {
   opacity: 1 !important;
 }
-
-/* line 12, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_slider.scss */
 .home-carousel-wrapper .carousel-control-prev {
   opacity: 1 !important;
 }
-
-/* line 24, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_slider.scss */
 .home-carousel-wrapper .carousel-item {
   height: 625px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 2000px) {
-  /* line 24, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_slider.scss */
   .home-carousel-wrapper .carousel-item {
     height: 575px;
   }
 }
-
 @media (max-width: 1600px) {
-  /* line 24, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_slider.scss */
   .home-carousel-wrapper .carousel-item {
     height: 475px;
   }
 }
-
 @media (max-width: 767px) {
-  /* line 24, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_slider.scss */
   .home-carousel-wrapper .carousel-item {
     height: 300px;
   }
 }
 
 /* archive pages */
-/* line 3, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .archive-menu {
   width: 100%;
   margin: 0 auto;
@@ -1055,8 +845,6 @@ header #site-navigation ul li a {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-/* line 14, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .archive-menu p {
   display: inline-block;
   color: #1faee4;
@@ -1065,8 +853,6 @@ header #site-navigation ul li a {
   font-size: 20px;
   font-weight: 600;
 }
-
-/* line 25, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .archive-menu a {
   border: 1px solid #1faee4;
   padding: 15px;
@@ -1075,91 +861,68 @@ header #site-navigation ul li a {
   background: #1faee4;
   text-transform: uppercase;
   margin-right: 20px;
-  line-height: 4.0;
+  line-height: 4;
   transition: all 0.2s ease-in;
   white-space: pre;
 }
-
 @media (max-width: 1200px) {
-  /* line 25, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .archive-menu a {
     padding: 12px;
     font-size: 16px;
   }
 }
-
-/* line 46, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .archive-menu a:hover {
   color: #1faee4;
   border: 1px solid #1faee4;
   text-decoration: none;
   background: white;
 }
-
 @media (max-width: 767px) {
-  /* line 25, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .archive-menu a {
     font-size: 15px;
     margin-right: 15px;
   }
 }
-
-/* line 65, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .archive-menu br {
   display: none;
 }
 
-/* line 73, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .news-band {
-  padding-top: 50px;
   padding-bottom: 75px;
 }
-
-/* line 78, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
+.news-band .container {
+  padding-top: 50px;
+}
 .news-band h1 {
   border-bottom: none !important;
 }
-
-/* line 84, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .news-band .post-title-wrapper {
   min-height: 100px;
   margin-top: 10px;
 }
-
 @media (max-width: 767px) {
-  /* line 84, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .news-band .post-title-wrapper {
     min-height: auto;
   }
 }
-
-/* line 95, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .news-band .post-title-wrapper a {
   color: #beeeec;
 }
-
-/* line 99, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .news-band .post-title-wrapper a:hover {
   color: #1faee4;
   text-decoration: none;
 }
-
-/* line 108, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .news-band .post-title-wrapper h2 {
   font-size: 20px;
   height: 80px;
   border-bottom: none !important;
   padding-top: 15px !important;
 }
-
 @media (max-width: 767px) {
-  /* line 108, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .news-band .post-title-wrapper h2 {
     margin-top: 25px;
   }
 }
-
-/* line 125, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .news-band .underline {
   height: 2px;
   width: 100%;
@@ -1167,15 +930,12 @@ header #site-navigation ul li a {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 @media (max-width: 767px) {
-  /* line 125, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .news-band .underline {
     display: none;
   }
 }
 
-/* line 143, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .post-date {
   font-size: 18px;
   margin-top: 14px;
@@ -1184,51 +944,41 @@ header #site-navigation ul li a {
   margin-top: 30px;
 }
 
-/* line 153, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .post-img {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   height: 225px;
+  transition: all 0.2s ease-in;
 }
-
-/* line 160, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .post-img:hover {
   opacity: 0.8;
+  transition: all 0.2s ease-in;
 }
 
-/* line 170, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .post-content-wrapper .intro {
   font-size: 18px;
   min-height: 120px;
 }
-
 @media (max-width: 767px) {
-  /* line 170, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .post-content-wrapper .intro {
     min-height: auto;
   }
 }
-
-/* line 185, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .post-content-wrapper .link a {
   font-size: 20px;
   font-weight: 600;
 }
 
 /* single posts */
-/* line 198, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .single-case-study-container {
   background: white;
 }
-
-/* line 202, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .single-case-study-container h1 {
   margin-left: 15px;
   margin-right: 15px;
 }
 
-/* line 211, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .case-study-title {
   font-size: 20px;
   margin-top: 15px;
@@ -1239,74 +989,58 @@ header #site-navigation ul li a {
   padding-top: 20px;
 }
 
-/* line 223, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .hero-image {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   height: 625px;
 }
-
 @media (max-width: 2000px) {
-  /* line 223, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .hero-image {
     height: 575px;
   }
 }
-
 @media (max-width: 1600px) {
-  /* line 223, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .hero-image {
     height: 475px;
   }
 }
-
 @media (max-width: 767px) {
-  /* line 223, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
   .hero-image {
     height: 300px;
   }
 }
 
-/* line 250, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .single-case-study-content {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
-/* line 254, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .single-case-study-content h2 {
   padding-top: 15px;
   margin-bottom: 25px;
 }
-
-/* line 261, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .single-case-study-content h3 {
   color: #1faee4;
   border-bottom: 1px solid #1faee4;
   padding-top: 15px;
   margin-bottom: 25px;
   font-size: 20px;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 30px;
 }
-
-/* line 271, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .single-case-study-content h4 {
   color: #1faee4;
   border-bottom: 1px solid #1faee4;
   padding-top: 15px;
   margin-bottom: 25px;
   font-size: 20px;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 30px;
 }
-
-/* line 281, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_case-studies.scss */
 .single-case-study-content a {
   color: #1abc9c;
 }
@@ -1381,96 +1115,76 @@ header #site-navigation ul li a {
   }
 
 }*/
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 .footer-top {
   background: #ebf4fb;
   margin-top: -15px;
   padding-bottom: 30px;
   padding-top: 10px;
 }
+.footer-top .container {
+  background: #ebf4fb;
+}
 
-/* line 10, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 footer {
   background: #1faee4;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-/* line 16, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
+footer .container {
+  background: #1faee4;
+}
 footer .footer-row {
   border-top: 1px solid white;
   padding-top: 25px;
 }
-
-/* line 21, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 footer .footer-row h5 {
   color: white;
   margin-bottom: 20px;
 }
-
-/* line 30, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 footer .footer-row nav ul {
   list-style-type: none;
   padding-left: 0px;
 }
-
-/* line 35, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 footer .footer-row nav ul li {
   padding-bottom: 8px;
 }
-
-/* line 39, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 footer .footer-row nav ul li a {
   color: black;
 }
-
-/* line 52, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 footer .footer-row img {
   max-width: 90%;
 }
-
 @media (max-width: 767px) {
-  /* line 52, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
   footer .footer-row img {
     max-width: 200px;
     margin-bottom: 25px;
   }
 }
-
-/* line 67, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_footer.scss */
 footer i {
   color: white;
   padding-right: 15px;
   font-size: 20px;
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .left-products-landing {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
-/* line 5, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .left-products-landing a {
   font-size: 30px;
   color: #1faee4;
   transition: all 0.2s ease-in;
 }
-
-/* line 11, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .left-products-landing a:hover {
   color: #1abc9c;
   text-decoration: none;
 }
 
-/* line 22, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .right-products-landing {
   background: #e3f2f0;
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
-/* line 28, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .right-products-landing h2 {
   color: #1abc9c;
   border-bottom: 1px solid #1abc9c;
@@ -1480,88 +1194,64 @@ footer i {
   font-size: 36px;
 }
 
-/* line 41, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row {
   height: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #1faee4;
 }
-
-/* line 47, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row h3 {
   min-height: 85px;
 }
-
-/* line 53, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row .product-info {
   border-top: 1px solid #1faee4;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* line 59, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row .product-info p {
   color: #1faee4;
   font-size: 17px;
   margin-bottom: 0px;
 }
-
-/* line 67, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row .product-info .fa-chevron-down {
   float: right;
   cursor: pointer;
 }
-
-/* line 74, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row .product-info .fa-chevron-up {
   float: right;
   cursor: pointer;
 }
-
-/* line 81, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row .product-info .product-excerpt {
   display: none;
 }
-
-/* line 85, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .products-landing-row .product-info .product-excerpt p {
   color: black;
 }
 
-/* line 97, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .bottom-products-band {
   padding-bottom: 50px;
 }
-
-/* line 101, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
 .bottom-products-band h2 {
   min-height: 140px;
 }
-
 @media (max-width: 767px) {
-  /* line 101, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_products-landing.scss */
   .bottom-products-band h2 {
     min-height: auto;
   }
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 #about-who-we-are .col-md-6:nth-child(2) {
   padding: 0px;
 }
 
-/* line 5, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 #about-who-we-are .col-md-6:nth-child(2) {
   padding-left: 0px;
 }
 
-/* line 9, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 #about-manufacturing-excellence .col-md-6:nth-child(1) {
   padding-right: 0px;
 }
 
-/* line 13, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .half-image {
   height: 100%;
   background-position: center !important;
@@ -1570,139 +1260,110 @@ footer i {
 }
 
 /* STAFF */
-/* line 21, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-team-wrapper p {
   column-count: 2;
   column-gap: 30px;
 }
 
 @media (max-width: 576px) {
-  /* line 27, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .about-team-wrapper p {
     column-count: 1;
   }
 }
-
-/* line 32, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 37, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile {
   width: 50%;
 }
 
 @media (max-width: 768px) {
-  /* line 42, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .about-staff-profile {
     width: 100%;
   }
 }
-
 @media (min-width: 576px) {
-  /* line 48, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .about-staff-profile-inner {
     max-width: 540px;
   }
 }
-
 @media (min-width: 768px) {
-  /* line 54, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .about-staff-profile-inner {
     max-width: 351px;
   }
 }
-
 @media (min-width: 992px) {
-  /* line 60, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .about-staff-profile-inner {
     max-width: 480px;
   }
 }
-
 @media (min-width: 1200px) {
-  /* line 66, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .about-staff-profile-inner {
     max-width: 570px;
   }
 }
-
-/* line 72, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile:nth-child(1) .about-staff-profile-inner {
   float: right;
   padding-left: 15px;
 }
 
 @media (max-width: 768px) {
-  /* line 78, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .about-staff-profile:nth-child(1) .about-staff-profile-inner {
     float: none;
   }
-  /* line 82, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
+
   .about-staff-profile-inner {
     margin: 0 auto;
   }
 }
-
 /* MANAGEMENT STAFF COLOURING */
-/* line 88, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .staff-management-band .about-staff-profile-row:nth-child(2n+2) .about-staff-profile:nth-child(2) {
-  background: #e6f2f2;
+  background: #e3f2f0;
 }
 
-/* line 92, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .staff-management-band .about-staff-profile-row:nth-child(2n+1) .about-staff-profile:nth-child(1) {
-  background: #e6f2f2;
+  background: #e3f2f0;
 }
 
 @media (max-width: 768px) {
-  /* line 97, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .staff-management-band .about-staff-profile-row .about-staff-profile {
     background: white !important;
   }
-  /* line 101, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
+
   .staff-management-band .about-staff-profile-row .about-staff-profile:nth-child(2n+1) {
-    background: #e6f2f2 !important;
+    background: #e3f2f0 !important;
   }
 }
-
 /* SALES STAFF COLOURING */
-/* line 107, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .staff-sales-band .about-staff-profile-row:nth-child(2n+1) .about-staff-profile:nth-child(2) {
   background: #ebf4fb;
 }
 
-/* line 111, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .staff-sales-band .about-staff-profile-row:nth-child(2n+2) .about-staff-profile:nth-child(1) {
   background: #ebf4fb;
 }
 
 @media (max-width: 768px) {
-  /* line 116, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
   .staff-sales-band .about-staff-profile-row .about-staff-profile {
     background: white !important;
   }
-  /* line 120, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
+
   .staff-sales-band .about-staff-profile-row .about-staff-profile:nth-child(2n+1) {
     background: #ebf4fb !important;
   }
 }
-
-/* line 125, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile-top {
   display: flex;
   height: 200px;
 }
 
-/* line 130, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile-top .col-5 {
   padding-left: 0px;
   padding-right: 20px;
 }
 
-/* line 135, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile-top .col-7 {
   padding-left: 0px;
   padding-top: 15px;
@@ -1710,30 +1371,25 @@ footer i {
   flex-direction: column;
 }
 
-/* line 142, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile-top h3 {
   padding-top: 0px;
   margin-bottom: 0px;
   color: #1abc9c;
 }
 
-/* line 148, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 #about-staff-job-title {
   color: #1faee4;
 }
 
-/* line 152, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 #about-staff-linkedin {
   color: #1faee4;
   margin-top: auto;
 }
 
-/* line 157, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-profile-bio {
   padding: 15px;
 }
 
-/* line 162, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_about.scss */
 .about-staff-image {
   width: 100%;
   height: 200px;
@@ -1741,28 +1397,23 @@ footer i {
   background-position: center top !important;
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_contact.scss */
 .main-contact-band {
   background: white;
 }
 
-/* line 5, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_contact.scss */
 #contact-image img {
   width: 100%;
   height: auto;
 }
 
-/* line 10, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_contact.scss */
 .main-contact-band {
   padding-bottom: 15px;
 }
 
-/* line 14, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_contact.scss */
 .main-contact-band h3 {
   padding-top: 0;
 }
 
-/* line 18, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_contact.scss */
 #gform_submit_button_3 {
   padding-left: 50px;
   padding-right: 50px;
@@ -1775,25 +1426,22 @@ footer i {
   transition: all 0.2s ease-in;
   /*@media(max-width: $laptop) {
 
-        margin-left: 30% !important;
+      margin-left: 30% !important;
 
-    }
+  }
 
-    @media(max-width: $medium) {
+  @media(max-width: $medium) {
 
-        margin-left: 0% !important;
+      margin-left: 0% !important;
 
-    }*/
+  }*/
 }
-
-/* line 32, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_contact.scss */
 #gform_submit_button_3:hover {
   border: 1px solid #1faee4 !important;
   background-color: transparent !important;
   color: #1faee4 !important;
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .bh-sl-container button {
   color: #1abc9c !important;
   padding-top: 10px;
@@ -1804,8 +1452,6 @@ footer i {
   transition: all 0.2s ease-in;
   background: white !important;
 }
-
-/* line 12, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .bh-sl-container button:hover {
   background: #1abc9c !important;
   color: white !important;
@@ -1813,140 +1459,123 @@ footer i {
   text-decoration: none !important;
 }
 
-/* line 23, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .list-content {
   font-size: 15px;
 }
 
-/* line 29, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .bh-sl-filter-title {
   border-bottom: none !important;
   padding-top: 25px !important;
 }
 
-/* line 36, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .loc-name {
   margin-bottom: 10px;
   font-size: 16px !important;
 }
 
-/* line 43, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .loc-phone {
   display: none;
 }
 
-/* line 49, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .loc-dist {
   display: none;
 }
 
-/* line 55, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .loc-directions {
   display: none;
 }
 
-/* line 63, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .loc-web a {
   transition: all 0.2s ease-in;
   color: #1faee4 !important;
 }
-
-/* line 68, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .loc-web a:hover {
   color: #1abc9c !important;
   text-decoration: none !important;
 }
 
-/* line 80, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 #accordion {
   margin-bottom: 50px;
 }
 
-/* line 86, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .card {
   margin-bottom: 15px;
 }
 
-/* line 92, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .card-header {
   background: #1abc9c;
 }
-
-/* line 96, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .card-header .btn-link {
   color: white;
   width: 100%;
   text-align: left;
 }
-
-/* line 102, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .card-header .btn-link .region-icon {
   float: right;
 }
 
-/* line 114, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .card-body a {
   color: #1abc9c;
 }
 
-/* line 122, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .single-location-wrapper {
   font-size: 20px;
 }
-
-/* line 126, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .single-location-wrapper a {
   transition: all 0.2s ease-in;
   color: #1faee4 !important;
   font-size: 20px;
 }
-
-/* line 132, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_where-to-buy.scss */
 .single-location-wrapper a:hover {
   color: #1abc9c !important;
   text-decoration: none !important;
 }
 
+.post-19912 h1 {
+  margin-bottom: 0px;
+}
+
+#page {
+  background: url(http://localhost/sentek/wp-content/themes/sentek/images/sentek-background-gradient.jpg);
+  background-repeat: repeat-x;
+  background-position: top;
+}
+
+.container {
+  background: white;
+}
+
 /* below due to full with pattern background */
-/* line 2, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .page-container {
   background: white;
 }
 
-/* line 12, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
+.wp-block-image a img {
+  transition: all 0.2s ease-in;
+}
 .wp-block-image a img:hover {
   opacity: 0.7;
+  transition: all 0.2s ease-in;
 }
 
-/* line 26, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .default-page-container img {
   max-width: 100%;
   height: auto;
 }
-
-/* line 33, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .default-page-container h2 {
   padding-top: 0px;
 }
-
-/* line 39, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .default-page-container h3 {
   padding-top: 0px;
 }
-
-/* line 45, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .default-page-container a {
   transition: all 0.2s ease-in;
   color: #1faee4;
 }
-
-/* line 50, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .default-page-container a:hover {
   color: #1abc9c;
   text-decoration: none;
 }
-
-/* line 59, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .default-page-container .wp-block-button__link {
   color: #1abc9c !important;
   padding-top: 10px;
@@ -1957,8 +1586,6 @@ footer i {
   border: 2px solid #1abc9c !important;
   transition: all 0.2s ease-in;
 }
-
-/* line 70, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_page-default.scss */
 .default-page-container .wp-block-button__link:hover {
   background: #1abc9c !important;
   color: white !important;
@@ -1966,37 +1593,41 @@ footer i {
   text-decoration: none !important;
 }
 
-/* line 1, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_maps.scss */
 .map-location-heading {
   padding-bottom: 10px !important;
   margin-bottom: 10px !important;
   font-size: 16px !important;
 }
 
-/* line 9, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_maps.scss */
 .acf-map {
   width: 100%;
   height: 500px;
   margin: 20px 0;
 }
-
 @media (max-width: 767px) {
-  /* line 9, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_maps.scss */
   .acf-map {
     height: 350px;
   }
 }
-
 @media (max-width: 400px) {
-  /* line 9, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_maps.scss */
   .acf-map {
     height: 275px;
   }
 }
 
-/* line 28, /Applications/MAMP/htdocs/sentek/wp-content/themes/sentek/sass/_maps.scss */
 .acf-map img {
   max-width: inherit !important;
 }
 
-/*# sourceMappingURL=../style.map */
+.wp-block-kadence-advancedgallery a {
+  text-decoration: none;
+}
+
+.kb-gallery-image-contain img {
+  transition: all 0.2s ease-in;
+}
+.kb-gallery-image-contain img:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
+}
+/*# sourceMappingURL=style.css.map */

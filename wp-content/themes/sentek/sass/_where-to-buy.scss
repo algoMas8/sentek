@@ -1,141 +1,145 @@
-.bh-sl-container button{
+.bh-sl-container button {
 
-  color: $green!important;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 2px solid $green!important;
-  transition: $transition;
-  background: white!important;
-
-  &:hover {
-
-      background: $green!important;
-      color: white!important;
-      border: 2px solid $green!important;
-      text-decoration: none!important;
-
-  }
-
-}
-
-.list-content{
-
-  font-size: 15px;
-
-}
-
-.bh-sl-filter-title{
-
-  border-bottom: none!important;
-  padding-top: 25px!important;
-
-}
-
-.loc-name{
-
-  margin-bottom: 10px;
-  font-size: 16px!important;
-
-}
-
-.loc-phone{
-
-  display: none;
-
-}
-
-.loc-dist{
-
-  display: none;
-
-}
-
-.loc-directions{
-
-  display: none;
-
-}
-
-.loc-web{
-
-  a{
-
+    color: $green !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid $green !important;
     transition: $transition;
-    color: $light-blue!important;
+    background: white !important;
 
-    &:hover{
+    &:hover {
 
-      color: $green!important;
-      text-decoration: none!important;
-
-    }
-
-  }
-
-}
-
-
-#accordion{
-
-  margin-bottom: 50px;
-
-}
-
-.card{
-
-  margin-bottom: 15px;
-
-}
-
-.card-header{
-
-  background: $green;
-
-  .btn-link{
-
-    color: white;
-    width: 100%;
-    text-align: left;
-
-    .region-icon{
-
-      float: right;
+        background: $green !important;
+        color: white !important;
+        border: 2px solid $green !important;
+        text-decoration: none !important;
 
     }
 
-  }
+}
+
+.list-content {
+
+    font-size: 15px;
 
 }
 
-.card-body{
+.bh-sl-filter-title {
 
-  a{
-
-    color: $green;
-
-  }
+    border-bottom: none !important;
+    padding-top: 25px !important;
 
 }
 
-.single-location-wrapper{
+.loc-name {
+
+    margin-bottom: 10px;
+    font-size: 16px !important;
+
+}
+
+.loc-phone {
+
+    display: none;
+
+}
+
+.loc-dist {
+
+    display: none;
+
+}
+
+.loc-directions {
+
+    display: none;
+
+}
+
+.loc-web {
+
+    a {
+
+        transition: $transition;
+        color: $light-blue !important;
+
+        &:hover {
+
+            color: $green !important;
+            text-decoration: none !important;
+
+        }
+
+    }
+
+}
+
+
+#accordion {
+
+    margin-bottom: 50px;
+
+}
+
+.card {
+
+    margin-bottom: 15px;
+
+}
+
+.card-header {
+
+    background: $green;
+
+    .btn-link {
+
+        color: white;
+        width: 100%;
+        text-align: left;
+
+        .region-icon {
+
+            float: right;
+
+        }
+
+    }
+
+}
+
+.card-body {
+
+    a {
+
+        color: $green;
+
+    }
+
+}
+
+.single-location-wrapper {
 
     font-size: 20px;
 
-  a{
+    a {
 
-    transition: $transition;
-    color: $light-blue!important;
-    font-size: 20px;
+        transition: $transition;
+        color: $light-blue !important;
+        font-size: 20px;
 
-    &:hover{
+        &:hover {
 
-      color: $green!important;
-      text-decoration: none!important;
+            color: $green !important;
+            text-decoration: none !important;
+
+        }
 
     }
 
-  }
+}
 
+.post-19912 h1 {
+    margin-bottom: 0px;
 }

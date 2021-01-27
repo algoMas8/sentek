@@ -531,13 +531,13 @@ while ( $the_query->have_posts() ) :
     }
     echo '<div class="col-md-4"><strong>' . get_the_title() . '</strong><br />';
     echo get_post_meta( get_the_id(), '_bh_sl_address', true );?><br />
-				<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
-				<?php } ?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?><br />
-				<b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
+<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
+<?php } ?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
+<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
+<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?><br />
+<b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
 <?php
 	$oldcountry = $newcountry;
 
@@ -603,13 +603,13 @@ while ( $the_query->have_posts() ) :
 
     echo '<div class="col-md-4"><strong>' . get_the_title() . '</strong><br />';
     echo get_post_meta( get_the_id(), '_bh_sl_address', true );?><br />
-				<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
-				<?php } ?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?><br />
-				<b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
+<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
+<?php } ?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
+<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
+<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?><br />
+<b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
 <?php
 	$oldState = $newState;
 
@@ -661,13 +661,13 @@ while ( $the_query_can->have_posts() ) :
 
     echo '<div class="col-md-4"><strong>' . get_the_title() . '</strong><br />';
     echo get_post_meta( get_the_id(), '_bh_sl_address', true );?><br />
-				<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
-				<?php } ?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?>
-        <br /><b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
+<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
+<?php } ?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
+<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
+<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?>
+<br /><b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
 <?php
 
 
@@ -734,13 +734,13 @@ while ( $the_query->have_posts() ) :
 
     echo '<div class="col-md-4"><strong>' . get_the_title() . '</strong><br />';
     echo get_post_meta( get_the_id(), '_bh_sl_address', true );?><br />
-				<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
-				<?php } ?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?><br />
-				<b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
+<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
+<?php } ?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
+<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
+<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?><br />
+<b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
 <?php
 	$oldState = $newState;
 
@@ -791,13 +791,13 @@ while ( $the_query_nz->have_posts() ) :
 
     echo '<div class="col-md-4"><strong>' . get_the_title() . '</strong><br />';
     echo get_post_meta( get_the_id(), '_bh_sl_address', true );?><br />
-				<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
-				<?php } ?>
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
-				<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?>
-        <br /><b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
+<?php if(get_post_meta( get_the_id(), '_bh_sl_address_two', true )){?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_address_two', true );?><br />
+<?php } ?>
+<?php echo get_post_meta( get_the_id(), '_bh_sl_city', true );?>,
+<?php echo get_post_meta( get_the_id(), '_bh_sl_state', true );?>&nbsp;
+<?php echo get_post_meta( get_the_id(), '_bh_sl_postal', true );?>
+<br /><b><a href="<?php the_permalink();?>">View dealer details</a></b><br /><br /></div>
 <?php
 
 

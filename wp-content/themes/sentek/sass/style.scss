@@ -111,20 +111,20 @@ h5 {
 
 .sentek-button {
 
-    color: $green!important;
+    color: $green !important;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 2px solid $green!important;
+    border: 2px solid $green !important;
     transition: $transition;
 
     &:hover {
 
-        background: $green!important;
-        color: white!important;
-        border: 2px solid $green!important;
-        text-decoration: none!important;
+        background: $green !important;
+        color: white !important;
+        border: 2px solid $green !important;
+        text-decoration: none !important;
 
     }
 
@@ -159,6 +159,14 @@ span {
     @include copyFont();
 }
 
+a {
+    color: $light-blue;
+}
+
+a:hover {
+    color: $light-blue;
+}
+
 
 @import 'header';
 @import 'mobile-menu';
@@ -173,3 +181,4 @@ span {
 @import 'where-to-buy';
 @import 'page-default';
 @import 'maps';
+@import 'markets';
