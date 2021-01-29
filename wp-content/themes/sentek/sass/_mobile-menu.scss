@@ -90,16 +90,27 @@
 
           }
 
-          #menu-item-38{
+          .menu-item-has-children{
 
-            a{
+            position: relative;
 
-              border-bottom: 1px solid black;
+            .fa-angle-down{
+
+              position: absolute;
+              margin-left: 15px;
+              margin-top: 10px;
+              z-index: 9999999999;
+
+
+              &:hover{
+
+                color: $light-green;
+
+              }
 
             }
 
           }
-
 
           li{
 
@@ -155,6 +166,16 @@
 
                 }
 
+
+              }
+
+            }
+
+            .sub-menu{
+
+              .fa{
+
+                display: none;
 
               }
 

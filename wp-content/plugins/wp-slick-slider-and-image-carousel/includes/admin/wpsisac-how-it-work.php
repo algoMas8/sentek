@@ -163,6 +163,7 @@ if ( !defined( 'ABSPATH' ) ) {
 								<li><?php _e( 'WPBakery Page Builder Supports', 'wp-slick-slider-and-image-carousel'); ?></li>
 								<li><?php _e( 'Elementor, Bevear and SiteOrigin Page Builder Support. <span class="wpos-new-feature">New</span>', 'wp-slick-slider-and-image-carousel'); ?></li>
 								<li><?php _e( 'Divi Page Builder Native Support.<span class="wpos-new-feature">New</span>', 'wp-slick-slider-and-image-carousel'); ?></li>
+								<li><?php _e( 'Fusion Page Builder (Avada) native support.<span class="wpos-new-feature">New</span>', 'wp-slick-slider-and-image-carousel'); ?></li>
 								<li><?php _e( 'WP Templating Features', 'wp-slick-slider-and-image-carousel'); ?></li>
 								<li><?php _e( 'Custom CSS', 'wp-slick-slider-and-image-carousel'); ?></li>
 								<li><?php _e( 'Slider Center Mode Effect', 'wp-slick-slider-and-image-carousel'); ?></li>

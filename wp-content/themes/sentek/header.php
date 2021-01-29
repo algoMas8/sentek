@@ -33,8 +33,6 @@
 
     <?php get_template_part('inc/mobile-overlay-menu');?>
 
-
-
     <div id="page" class="site">
 
         <div>
@@ -62,15 +60,15 @@
                             </div>
 
 
-                            <nav id="site-navigation" class="main-navigation text-right">
+                            <nav id="site-navigation" class="main-navigation text-right desktop-menu">
                                 <?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'primary-menu',
-							)
-						);
-						?>
+                        						wp_nav_menu(
+                        							array(
+                        								'theme_location' => 'menu-1',
+                        								'menu_id'        => 'primary-menu',
+                        							)
+                        						);
+                        				?>
                             </nav><!-- #site-navigation -->
                         </div>
                     </div>

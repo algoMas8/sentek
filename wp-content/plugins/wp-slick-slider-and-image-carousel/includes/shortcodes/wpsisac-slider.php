@@ -3,7 +3,6 @@
  * 'slick-slider' Shortcode
  * 
  * @package WP Slick Slider and Image Carousel
-
  * @since 1.0.0
  */
 
@@ -12,6 +11,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function wpsisac_get_slick_slider( $atts, $content = null ){
+
+	// SiteOrigin Page Builder Gutenberg Block Tweak - Do not Display Preview
+	if( isset( $_POST['action'] ) && ($_POST['action'] == 'so_panels_layout_block_preview' || $_POST['action'] == 'so_panels_builder_content_json') ) {
+		return "[slick-slider]";
+	}
+
+	// Divi Frontend Builder - Do not Display Preview
+	if( function_exists( 'et_core_is_fb_enabled' ) && isset( $_POST['is_fb_preview'] ) && isset( $_POST['shortcode'] ) ) {
+		return '<div class="wpsisac-builder-shrt-prev">
+					<div class="wpsisac-builder-shrt-title"><span>'.esc_html__('Slick Slider View', 'wp-slick-slider-and-image-carousel').'</span></div>
+					slick-slider
+				</div>';
+	}
+
+	// Fusion Builder Live Editor - Do not Display Preview
+	if( class_exists( 'FusionBuilder' ) && (( isset( $_GET['builder'] ) && $_GET['builder'] == 'true' ) || ( isset( $_POST['action'] ) && $_POST['action'] == 'get_shortcode_render' )) ) {
+		return '<div class="wpsisac-builder-shrt-prev">
+					<div class="wpsisac-builder-shrt-title"><span>'.esc_html__('Slick Slider View', 'wp-slick-slider-and-image-carousel').'</span></div>
+					slick-slider
+				</div>';
+	}
 
 	// Shortcode Parameter
 	extract(shortcode_atts(array(
@@ -116,7 +136,7 @@ function wpsisac_get_slick_slider( $atts, $content = null ){
     // If post is there
     if ( $query->have_posts() ) : ?>
 		<div class="wpsisac-slick-slider-wrp wpsisac-clearfix <?php echo $extra_class; ?>" data-conf="<?php echo htmlspecialchars(json_encode($slider_conf)); ?>">
-			<div id="wpsisac-slick-slider-<?php echo $unique; ?>" class="wpsisac-slick-slider <?php echo $design; ?> <?php echo $image_fit_class; ?>">
+			<div id="wpsisac-slick-slider-<?php echo $unique; ?>" class="wpsisac-slick-init wpsisac-slick-slider <?php echo $design; ?> <?php echo $image_fit_class; ?>">
 				<?php while ( $query->have_posts() ) : $query->the_post();
 					$slider_img = wpsisac_get_post_featured_image( $post->ID, $sliderimage_size, true );
 						// Include shortcode html file
@@ -127,7 +147,7 @@ function wpsisac_get_slick_slider( $atts, $content = null ){
 			</div>
 		</div>
 	<?php
-    endif; 
+    endif;
     wp_reset_postdata(); // Reset WP Query
 	return ob_get_clean();
 }

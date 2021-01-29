@@ -83,6 +83,9 @@ Check [Demo and Features](https://demo.wponlinesupport.com/slick-slider-demo/) f
 > * Gutenberg Block Supports.
 > * WP Templating Features.
 > * WPBakery Page Builder Support.
+> * Elementor, Beaver and SiteOrigin Page Builder Native Support (New).
+> * Divi Page Builder Native Support (New).
+> * Fusion Page Builder (Avada) Native Support (New).
 > * Drag & Drop frature to display slide in your order.
 > * Custom CSS plugin setting option.
 > * Powerful shortcode with strong parameters.
@@ -138,6 +141,12 @@ Check [Demo and Features](https://demo.wponlinesupport.com/slick-slider-demo/) f
 9. Also added Gutenberg block support.
 
 == Changelog ==
+
+= 2.3 (25, jan 2021) =
+* [+] New - Added native shortcode support for Elementor, SiteOrigin and Beaver builder.
+* [+] New - Added Divi page builder native support.
+* [+] New - Added Fusion Page Builder (Avada) native support.
+* [*] Tweak - Code optimization and performance improvements.
 
 = 2.2.1 (27, Oct 2020) =
 * [*] Minor  Update - Fixed conflict from tgmpa (theme pluign recommends - if your theme using tgmpa library) where it was showing message inside "How It Works - Display and shortcode"

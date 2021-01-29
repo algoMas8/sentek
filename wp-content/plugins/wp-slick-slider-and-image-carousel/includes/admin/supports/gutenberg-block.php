@@ -38,7 +38,7 @@ function wpsisac_register_guten_block() {
 						),
 			'image_fit' => array(
 							'type'		=> 'string',
-							'default'	=> 'true',
+							'default'	=> 'false',
 						),
 			'sliderheight' => array(
 							'type'		=> 'number',
@@ -58,11 +58,11 @@ function wpsisac_register_guten_block() {
 						),
 			'autoplay_interval' => array(
 							'type'		=> 'number',
-							'default'	=> '3000',
+							'default'	=> 3000,
 						),
 			'speed' => array(
 							'type'		=> 'number',
-							'default'	=> '300',
+							'default'	=> 300,
 						),
 			'loop' => array(
 							'type'		=> 'string',
@@ -82,7 +82,7 @@ function wpsisac_register_guten_block() {
 						),
 			'limit' => array(
 							'type'		=> 'number',
-							'default'	=> '-1',
+							'default'	=> -1,
 						),
 			'category' => array(
 							'type'		=> 'string',
@@ -113,19 +113,19 @@ function wpsisac_register_guten_block() {
 						),
 			'image_fit' => array(
 							'type'		=> 'string',
-							'default'	=> 'true',
+							'default'	=> 'false',
 						),
 			'sliderheight' => array(
-							'type'		=> 'string',
+							'type'		=> 'number',
 							'default'	=> '',
 						),
 			'slidestoshow' => array(
 							'type'		=> 'number',
-							'default'	=> '3',
+							'default'	=> 3,
 						),
 			'slidestoscroll' => array(
 							'type'		=> 'number',
-							'default'	=> '1',
+							'default'	=> 1,
 						),
 			'dots' => array(
 							'type'		=> 'string',
@@ -141,11 +141,11 @@ function wpsisac_register_guten_block() {
 						),
 			'autoplay_interval' => array(
 							'type'		=> 'number',
-							'default'	=> '3000',
+							'default'	=> 3000,
 						),
 			'speed' => array(
 							'type'		=> 'number',
-							'default'	=> '300',
+							'default'	=> 300,
 						),
 			'loop' => array(
 							'type'		=> 'string',
@@ -169,7 +169,7 @@ function wpsisac_register_guten_block() {
 						),
 			'limit' => array(
 							'type'		=> 'number',
-							'default'	=> '-1',
+							'default'	=> -1,
 						),
 			'category' => array(
 							'type'		=> 'string',

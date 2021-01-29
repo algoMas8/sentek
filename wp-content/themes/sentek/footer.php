@@ -21,7 +21,6 @@
 
 				<img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png" alt="sentek logo" />
 
-
 			</div>
 
 			<div class="col-md-3">
@@ -125,26 +124,44 @@ jQuery('.region-icon').each(function(){
 });
 </script>
 
+<!-- toggle child items on desktop menu -->
 <script>
-//jQuery(window).resize(function() {
+jQuery('.desktop-menu .menu-item-has-children').each(function(){
 
-	//if (jQuery(window).width() > 1119) {
+	jQuery(this).hover(function() {
 
-		jQuery('.menu-item-has-children').each(function(){
-
-			jQuery(this).hover(function() {
-
-				jQuery(this).find('.sub-menu').slideToggle('slow');
-
-			});
+		jQuery(this).find('.sub-menu').slideToggle('slow');
 
 		});
 
-	//}
-
-//s});
-
+});
 </script>
+
+<!-- inject down arrow to mobile menu -->
+<script>
+    jQuery(document).ready(function(){
+      jQuery(".overlay-content #primary-menu .menu-item-has-children a").append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
+
+    });
+</script>
+
+<!-- toggle sub items for mobile menu -->
+<script>
+jQuery(document).on('click','.overlay-content #primary-menu .menu-item-has-children a .fa-angle-down', function(event) {
+
+		event.preventDefault();
+		jQuery(this).closest('.menu-item-has-children').find('.sub-menu').slideToggle('slow');
+
+});
+</script>
+
+<!-- tabs effects -->
+<script>
+jQuery('.nav-link').first().addClass('active');
+jQuery('.tab-pane').first().addClass('active').removeClass('fade');
+</script>
+
+
 
 </body>
 </html>

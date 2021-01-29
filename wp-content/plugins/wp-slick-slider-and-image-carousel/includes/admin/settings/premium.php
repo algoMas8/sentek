@@ -141,7 +141,12 @@ if ( !defined( 'ABSPATH' ) ) {
 	    	</tr>
 	    	<tr>
 	    		<th><?php _e( 'Divi Page Builder Native Support', 'wp-slick-slider-and-image-carousel' ); ?> <em class="wpos-new-feature">New</em> <span><?php _e( 'Use this plugin with Divi Builder easily', 'wp-slick-slider-and-image-carousel' ); ?></span></th>
-	    		<td><i class="dashicons dashicons-no-alt"></i></td>
+	    		<td><i class="dashicons dashicons-yes"></i></td>
+	    		<td><i class="dashicons dashicons-yes"></i></td>
+	    	</tr>
+	    	<tr>
+	    		<th><?php _e( 'Fusion Page Builder (Avada) native support', 'wp-slick-slider-and-image-carousel' ); ?> <em class="wpos-new-feature">New</em> <span><?php _e( 'Use this plugin with Fusion(Avada) Builder easily', 'wp-slick-slider-and-image-carousel' ); ?></span></th>
+	    		<td><i class="dashicons dashicons-yes"></i></td>
 	    		<td><i class="dashicons dashicons-yes"></i></td>
 	    	</tr>
 			<tr>

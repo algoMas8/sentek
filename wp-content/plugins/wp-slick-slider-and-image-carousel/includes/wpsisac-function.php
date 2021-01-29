@@ -16,10 +16,17 @@ if ( !defined( 'ABSPATH' ) ) {
  * @since 1.2.2
  */
 function wpsisac_get_unique() {
-  static $unique = 0;
-  $unique++;
+    static $unique = 0;
+    $unique++;
 
-  return $unique;
+    // For Elementor & Beaver Builder
+    if( ( defined('ELEMENTOR_PLUGIN_BASE') && isset( $_POST['action'] ) && $_POST['action'] == 'elementor_ajax' )
+    || ( class_exists('FLBuilderModel') && ! empty( $_POST['fl_builder_data']['action'] ) )
+    || ( function_exists('vc_is_inline') && vc_is_inline() ) ) {
+        $unique = current_time('timestamp') . '-' . rand();
+    }
+
+    return $unique;
 }
 
 /**
@@ -80,12 +87,12 @@ function wpsisac_get_post_featured_image( $post_id = '', $size = 'full') {
  */
 function wpsisac_slider_designs() {
     $design_arr = array(
-        'design-1'  	=> __('Design 1', 'wp-slick-slider-and-image-carousel'),
-        'design-2'  	=> __('Design 2', 'wp-slick-slider-and-image-carousel'),
-        'design-3'  	=> __('Design 3', 'wp-slick-slider-and-image-carousel'),
-        'design-4' 		=> __('Design 4', 'wp-slick-slider-and-image-carousel'),
-        'design-5' 		=> __('Design 5', 'wp-slick-slider-and-image-carousel'),
-        'design-6' 		=> __('Design 6', 'wp-slick-slider-and-image-carousel'),
+        'design-1'  => __('Design 1', 'wp-slick-slider-and-image-carousel'),
+        'design-2'  => __('Design 2', 'wp-slick-slider-and-image-carousel'),
+        'design-3'  => __('Design 3', 'wp-slick-slider-and-image-carousel'),
+        'design-4' 	=> __('Design 4', 'wp-slick-slider-and-image-carousel'),
+        'design-5' 	=> __('Design 5', 'wp-slick-slider-and-image-carousel'),
+        'design-6' 	=> __('Design 6', 'wp-slick-slider-and-image-carousel'),
 	);
 	return apply_filters('wpsisac_slider_designs', $design_arr );
 }

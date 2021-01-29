@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel. Also added Gutenberg block support.
  * Author: WP OnlineSupport
- * Version: 2.2.1
+ * Version: 2.3
  * Author URI: https://www.wponlinesupport.com
  *
  * @package WordPress
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if( ! defined('WPSISAC_VERSION') ) {
-	define( 'WPSISAC_VERSION', '2.2.1' ); // Plugin version
+	define( 'WPSISAC_VERSION', '2.3' ); // Plugin version
 }
 if( ! defined( 'WPSISAC_DIR' ) ) {
 	define( 'WPSISAC_DIR', dirname( __FILE__ ) ); // Plugin dir
@@ -50,7 +50,7 @@ function wpsisac_get_load_textdomain() {
 	// Set filter for plugin's languages directory
 	$wpsisac_lang_dir = dirname( plugin_basename( __FILE__ ) ) . '/languages/';
 	$wpsisac_lang_dir = apply_filters( 'wpsisac_languages_directory', $wpsisac_lang_dir );
-	
+
 	// Traditional WordPress plugin locale filter.
 	$get_locale = get_locale();
 
@@ -80,7 +80,7 @@ function wpsisac_get_load_textdomain() {
  */
 function wpsisac_get_plugins_loaded() {
 	wpsisac_get_load_textdomain();
-} 
+}
 add_action('plugins_loaded', 'wpsisac_get_plugins_loaded');
 
 /**
@@ -125,7 +125,6 @@ function free_wpsisac_install_premium_version(){
 	}
 }
 
-
 /**
  * Plugin Setup (On Deactivation)
  * 
@@ -135,7 +134,7 @@ function free_wpsisac_install_premium_version(){
  * @since 1.0.0
  */
 function wpsisac_uninstall() {
-	
+
 	// IMP need to flush rules for custom registered post type
 	flush_rewrite_rules();
 }
@@ -162,7 +161,7 @@ function wpsisac_get_admin_notice() {
 	$notice_link        = add_query_arg( array('message' => 'wpsisac-plugin-notice'), admin_url('plugins.php') );
 	$notice_transient   = get_transient( 'wpsisac_install_notice' );
 
-	if( $notice_transient == false && $pagenow == 'plugins.php' && file_exists( $dir ) && current_user_can( 'install_plugins' ) ) {        
+	if( $notice_transient == false && $pagenow == 'plugins.php' && file_exists( $dir ) && current_user_can( 'install_plugins' ) ) {
 		echo '<div class="updated notice" style="position:relative;">
 			<p>
 				<strong>'.sprintf( __('Thank you for activating %s', 'wp-slick-slider-and-image-carousel'), 'WP Slick Slider and Image Carousel').'</strong>.<br/>
@@ -218,7 +217,7 @@ function wpos_analytics_anl25_load() {
 							'slug'			=> 'wp-slick-slider-and-image-carousel',
 							'type'			=> 'plugin',
 							'menu'			=> 'edit.php?post_type=slick_slider',
-							'text_domain'	=> 'wp-slick-slider-and-image-carousel',							
+							'text_domain'	=> 'wp-slick-slider-and-image-carousel',
 						));
 
 	return $wpos_analytics;
